@@ -15,8 +15,8 @@
 
 | 而家 `.com` | 後果 |
 | --- | --- |
-| 根網址 **302** 去 `.shop` 首頁 | Google 當臨時搬家，權重傳得慢、唔穩 |
-| 內頁 **404** | 舊連結、品牌搜尋、AI citation 撞死牆 |
+| 根網址 **302** 去 `.shop` 首頁 | Google 當臨時搬家；品牌 SERP 可同時出 `.com` 同 `.shop` |
+| 內頁 **404** | 舊 bookmark／殘餘外鏈撞牆；**而家多數已唔喺 Google 索引**（見 [colourliving-com-current-index.md](../playbooks/colourliving-com-current-index.md)） |
 | Contact／名錄仍寫 `.com` | 官方自己分裂 entity |
 
 未有品牌內容就「留住 `.com` 唔好指去 Shopify」，等於留一個死品牌網域。Luxury 雙站策略只在 **品牌站真係有獨立內容** 時先有意義。

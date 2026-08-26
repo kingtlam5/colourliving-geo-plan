@@ -16,13 +16,14 @@
 | `https://www.colourliving.com/` | 同樣 **302** 去 `.shop` 首頁 |
 | `https://colourliving.com/pages/about-us` 等內頁 | **404** |
 
-即係：根網址已經有轉址，但係 **臨時 302、唔保留路徑**。舊產品／分類 URL 對 Google 嚟講係死連結。SEO 要改成 **301**，並且盡量把有流量的舊路徑對去新 Shopify 頁。
+即係：根網址已經有轉址，但係 **臨時 302、唔保留路徑**。內頁 404。  
+**2026-08-26 覆核：** `site:colourliving.com` 同新加嘅 GSC 都顯示 **幾乎冇內頁索引**——舊 catalog 已退出 Google。而家 SEO 優先係把首頁 **302 改 301**，唔係以為仲有幾百頁喺度搶排名。詳情：[colourliving-com-current-index.md](../playbooks/colourliving-com-current-index.md)。
 
 ### 盤點來源（由準到粗）
 
 **A. Google Search Console（首選）**
 
-即使舊站關咗，只要你 **而家仍然登入到** 舊 property，或者 **而家先加** `colourliving.com` 的 Domain property，Google 仍可能顯示殘留索引。
+即使舊站關咗，而家加 `colourliving.com` 的 Domain property **可以完全空白**——唔一定係故障。`.shop` 加 GSC 即日有數，係因為 Google 已爬咗兩個月；`.com` 索引裡幾乎冇內頁。新 property 圖表仍可能要 1–3 日；等完預期仍係 0 已編入索引，或首頁列入「有重新導向」。用 **URL 檢查** 即時睇 `https://colourliving.com/`。
 
 1. 去 [Google Search Console](https://search.google.com/search-console)
 2. 加 property：優先 **Domain** `colourliving.com`（要驗證 DNS TXT，你有 domain login 就做得到）

@@ -2,26 +2,27 @@
 
 診斷日期：2026-08-25。基於公開網頁、robots、agents.md、搜尋結果與競品對照，**未登入** 你們的 GSC / GA4 / Merchant Center。內部數據要用 [07-measurement.md](07-measurement.md) 的清單自己跑一輪，把本文件的「假設」改成「事實」。
 
-總評：網站視覺同品牌調性已經係旗艦店水平；**搜尋系統仍處於「新網域 + 舊網域互食 + 產品頁未為香港搜尋而寫」的階段。** 呢個階段做對 5 件事，效果會遠大於寫 50 篇 blog。
+總評：網站視覺同品牌調性已經係旗艦店水平；**搜尋系統仍處於「新網域權威低 + 產品頁未為香港搜尋而寫」的階段。** `colourliving.com` 而家幾乎冇內頁索引，剩餘主要係首頁 302。呢個階段做對 5 件事，效果會遠大於寫 50 篇 blog。
 
 診斷未登入 GSC／GA4，部分技術觀察（例如舊 `.com` 內頁 404、中文未 publish）需用內部工具覆核。
 
 ---
 
-## 發現 1 — 雙域名互食（最高優先）
+## 發現 1 — `colourliving.com` 而家幾乎冇內頁索引（2026-08-26 覆核）
 
-| 域名 | 角色（而家） | 風險 |
+你加 GSC 之後空白、`site:colourliving.com` 只得首頁，**同公開抓取一致**。舊 Magento／HTML 目錄基本上已退出 Google 索引。先前把呢個寫成「兩個站目錄互食」**過重**。
+
+而家實際：
+
+| URL | 狀態 | 仲影響 SEO／GEO？ |
 | --- | --- | --- |
-| `colourliving.com` | 舊品牌域名；根網址而家轉去 `.shop`（應 301） | 內頁 404 先會漏權重；vendor 寫 `.com` **唔係問題** |
-| `colourliving.shop` | 新 Shopify，launch ~2 個月 | 新域權威低；要靠 301 繼承，唔靠叫齊人改網址 |
+| `colourliving.com/` 同 `www` | **302** → `.shop` **首頁** | **會。** 品牌搜尋可以同時出 `.com` 同 `.shop` 兩條首頁；302 合併慢。應改 **301** |
+| `/pages/about-us`、產品／分類等內頁 | **404** | 幾乎唔再喺索引；唔係而家嘅排名對手 |
+| LinkedIn 等官網寫 `.com` | citation | 應保留；見 [com-vs-shop-citations.md](../playbooks/com-vs-shop-citations.md) |
 
-公開頁面已見到衝突：
+點樣得出呢個結論、GSC 點解唔似 `.shop` 即日有數：見 [colourliving-com-current-index.md](../playbooks/colourliving-com-current-index.md)。
 
-- Contact 頁寫 `https://www.colourliving.com`（301 之後呢條會通；將來品牌站反而啱）
-- Herman Miller「Where to buy」仍指向 `colourliving.com`（若已非產品線先要更正／移除；**唔好**只為改成 `.shop` 而聯絡）
-- `colourliving.com/` 而家係 **302** 去 `.shop` **首頁**（唔保留路徑）；內頁例如 `/pages/about-us` 回 **404**。應改 **301** 並映射舊路徑。Vendor 名錄 **保持 `.com`**，見 [com-vs-shop-citations.md](../playbooks/com-vs-shop-citations.md)
-
-**含義：** 未把 `.com` 改成 **301 + 內頁對應** 之前，舊深鏈會 404，權重傳唔穩。呢個係架構題，唔係「叫全世界改寫 `.shop`」。做法見 [03-foundation.md](03-foundation.md)。
+**含義：** P0 仍然係根網址 **302 → 301**。唔使以為 Google 仲藏住幾百個舊 `.com` 產品頁。
 
 ---
 
@@ -144,7 +145,7 @@ GSC、GA4、Merchant Center 已裝，代表技術門檻已過。Launch 兩個月
 
 | 優先 | 項目 | 點解先做 |
 | --- | --- | --- |
-| P0 | 域名策略：`.com` → `.shop` **301**（citation 官網欄保持 `.com`） | 死 `.com` 內頁 404 先會漏權重；唔使發動 vendor 改網址 |
+| P0 | 域名：`.com` 根網址 **302 → 301**（內頁而家多數已唔喺索引） | 合併兩條品牌首頁；唔係拯救舊 catalog |
 | P0 | 修復 sitemap、中文 404、模板洩漏、亂碼 | 爬蟲同客人同時受傷 |
 | P0 | 品牌版 `llms.txt` + Organization schema + NAP | SEO + GEO 共同地基 |
 | P1 | 產品標題／描述模板 + 主力 SKU 重寫（中英） | 最大頁面數量、最大長尾 |

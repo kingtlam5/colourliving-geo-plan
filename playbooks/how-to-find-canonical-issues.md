@@ -15,7 +15,7 @@ Canonical 問題 **唔係** 喺 Shopify Admin 有一個「Canonical 報告」。
 | `/pages/contact-us` → About | 你有意 301，**留住** |
 | `/collections/bath-1` → `bath` | 已 301，正常 |
 | 中文 `/zh` | 未 publish，暫時 404，唔算 live canonical 問題 |
-| **`colourliving.com` 302 + 內頁 404** | **唯一要優先修的大問題** |
+| **`colourliving.com` 302**（內頁多數已唔喺索引） | 品牌 SERP 兩條首頁；改 301 |
 
 Roca display **唔係 canonical 問題**，係「唔想 Google 索引、但鋪頭 iPad 要開到」。做法係 **繼續 published + noindex**，見 [roca-display-noindex.md](roca-display-noindex.md)。**唔好 unpublish。**
 
@@ -73,7 +73,7 @@ https://httpstatus.io/ 貼：
 | 優先 | URL | 發生咩事 | 你要做 |
 | --- | --- | --- | --- |
 | P0 | `https://colourliving.com/` | **302** 去 `.shop` 首頁 | 改 **301**；見域名 FAQ |
-| P0 | `https://colourliving.com/pages/about-us` 等內頁 | **404**，冇轉去 `.shop` | 301 去對應 `.shop` 頁或首頁 |
+| P2 | `https://colourliving.com/pages/about-us` 等內頁 | **404**；**而家多數已唔喺 Google 索引** | 有空先 map 去 `.shop`；唔使當排名互食 |
 | P1 | `https://colourliving.shop/collections/roca-display-1` … `display-11` | 店內 iPad 要用，所以 **必須繼續發布**。對 Google 嚟講係薄／工具頁 | **唔好 Unpublish**（iPad 會 404）。加 `noindex`，見下面 |
 
 除 `.com` 之外，店內產品／品牌／品類頁的 canonical **冇第二個同等大的 tag 錯誤**。Contact→About、bath-1→bath、collection 產品 URL 指向 `/products/` 都屬正確行為。
