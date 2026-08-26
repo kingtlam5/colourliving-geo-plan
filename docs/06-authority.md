@@ -8,15 +8,17 @@ COLOURLIVING 其實已有歷史權威（Time Out、BODW Design Spots、A' Design
 
 ## A. 先修 citation，再開新 PR
 
-列出 30 個已存在的公開資料源，逐個改網址同 NAP：
+列出 30 個已存在的公開資料源，**優先修店名／地址／電話**，唔係優先改網域：
 
-- Google Business Profile
-- Facebook / Instagram / LinkedIn company
+- Google Business Profile（Website 建議留 `colourliving.com`，301 帶去店）
+- Facebook / Instagram / LinkedIn company（Shop 掣可用 `.shop`）
 - Apple Maps / Bing
-- 品牌 Where to buy
+- 品牌 Where to buy：**官網保持 colourliving.com**；只改錯地址或死連結
 - PartnerNet、OpenRice 類目錄（如有）
-- 舊新聞的「官網」欄（能更正就更正）
+- 舊新聞能更正 NAP 就更正；**唔好**專登把官網改 `.shop`
 - Herman Miller 等已過時的 dealer 頁（若已非產品線，應移除或更正，避免 entity 混亂）
+
+點解唔叫 vendor 改去 `.shop`：見 [com-vs-shop-citations.md](../playbooks/com-vs-shop-citations.md)。301 已經令 `.com` 連結用得。將來品牌站要食返呢批 `.com` 外鏈。
 
 呢步比發一篇新稿更重要。
 
@@ -31,7 +33,7 @@ COLOURLIVING 其實已有歷史權威（Time Out、BODW Design Spots、A' Design
 - Logo
 - 店相片 5 張
 - 標準簡介 50 字 EN + 50 字 ZH
-- 地址、地圖座標、官網、電話、WhatsApp
+- 地址、地圖座標、官網（`https://colourliving.com`）、電話、WhatsApp
 - 營業時間
 
 ---
@@ -51,7 +53,7 @@ COLOURLIVING 其實已有歷史權威（Time Out、BODW Design Spots、A' Design
 - 同設計師的住宅案例（要客權）
 - 獲獎 showroom
 
-每篇報道必須帶 `colourliving.shop` 同地址。PR 稿自己寫好答案段，記者會抄。
+每篇報道必須帶地址；官網給 `colourliving.com`。若報道講「立即選購」先加 `colourliving.shop`。PR 稿自己寫好答案段，記者會抄。
 
 ---
 

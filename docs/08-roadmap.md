@@ -32,9 +32,10 @@
 
 ### 週 1
 
-- [ ] 決定並文件化：canonical = `https://colourliving.shop`
-- [ ] Contact、footer、About 去掉「官網 = colourliving.com」
-- [ ] GBP 官網改 `.shop`，NAP 對齊
+- [ ] 決定並文件化：購物正規網址 = `https://colourliving.shop`；品牌身份網址 = `https://colourliving.com`（301 去店）
+- [ ] Footer／Shop CTA 連去 `.shop`；名片／vendor pack 官網保持 `.com`
+- [ ] GBP：NAP 對齊；Website 建議 `.com`（301 會帶去店）
+- [ ] **唔好** 群發品牌商改 Where to buy 去 `.shop`（見 [com-vs-shop-citations.md](../playbooks/com-vs-shop-citations.md)）
 - [ ] 核對 sitemap 喺 GSC 顯示成功（瀏覽器打開 XML 為 200），GSC 提交
 - [ ] 修中文模板洩漏、`LISS?` 類亂碼
 - [ ] 上線品牌版 `llms.txt`（[草稿](../playbooks/llms-txt-draft.md)）
@@ -114,7 +115,7 @@
 
 ### GEO 與權威
 
-- [ ] 聯絡 5 個品牌更新 stockist URL
+- [ ] 聯絡 5 個品牌：**核對 NAP（地址／電話／營業）**；官網欄若已係 `colourliving.com` 就 **唔改**。只修 404 深鏈或錯地址
 - [ ] 第二次、第三次 GEO prompt 監測（日 60、日 90）
 - [ ] GBP 每週帖 + 邀請 10 個近期到店客人留評
 - [ ] 1 則設計媒體投稿或新聞（新系列即可）
@@ -151,5 +152,5 @@
 | `.com` 301 要 IT／舊平台權限 | 先改所有新站自引同 GBP，舊站至少加 canonical + 首頁 301 |
 | Shopify 覆蓋 `llms.txt` | 放喺可編輯的 Files + app，或 theme 額外 route |
 | 翻譯人手不足 | 只做 Batch 1+2，其餘產品中文 title 用「品牌+品類+型號」模板 |
-| 品牌唔肯改 stockist | 先改自己站同 GBP；電郵每季跟 |
+| 品牌唔肯改 stockist | **唔使堅持改網址。** 只跟錯地址／404；官網 `.com` 係正確終態 |
 | 高價貨無 GTIN | Merchant 用 MPN + 正確設定，唔好填假 GTIN |

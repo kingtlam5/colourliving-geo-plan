@@ -36,7 +36,9 @@
 ```
 階段 A（而家，品牌站未開工）
   colourliving.com  /*  →  301  →  colourliving.shop（對應頁或首頁）
-  官網對外只講 .shop
+  對外 **身份網址** 仍然講 colourliving.com（vendor / 名片 / 建議 GBP）
+  對外 **購物／廣告** 用 colourliving.shop
+  唔好發動 vendor 改官網去 .shop
 
 階段 B（management 真係開品牌站：至少有 About、Showroom、Press、For Designers）
   colourliving.com/                 → 品牌首頁 200
@@ -71,7 +73,7 @@
 - 把 `.com` 設成 Shopify **第二個可瀏覽店**（同一目錄兩個網域，canonical 戰爭）
 - 用 302 一直放住「等管理層決定」
 
-**一句畀 management：** 品牌站未有內容前，`.com` 最有價值的用途係把歷史權重同死連結交俾 `.shop`。品牌站開工嗰日先分拆，產品 URL 永遠唔搬去 `.com`。
+**一句畀 management：** 品牌站未有內容前，`.com` 最有價值的用途係把歷史權重同死連結交俾 `.shop`。品牌站開工嗰日先分拆，產品 URL 永遠唔搬去 `.com`。Vendor／名錄的「官網」**繼續寫 colourliving.com**——見 [com-vs-shop-citations.md](../playbooks/com-vs-shop-citations.md)。
 
 ---
 

@@ -12,16 +12,16 @@
 
 | 域名 | 角色（而家） | 風險 |
 | --- | --- | --- |
-| `colourliving.com` | 舊站仍在線，Google 品牌搜尋仍常指向它；聯絡頁、部分經銷商名錄仍引此域 | 舊權重、舊產品 URL、舊內容同新站搶 |
-| `colourliving.shop` | 新 Shopify，launch ~2 個月 | 新域權威低，未繼承 `.com` 的歷史連結 |
+| `colourliving.com` | 舊品牌域名；根網址而家轉去 `.shop`（應 301） | 內頁 404 先會漏權重；vendor 寫 `.com` **唔係問題** |
+| `colourliving.shop` | 新 Shopify，launch ~2 個月 | 新域權威低；要靠 301 繼承，唔靠叫齊人改網址 |
 
 公開頁面已見到衝突：
 
-- Contact 頁寫 `https://www.colourliving.com`
-- Herman Miller「Where to buy」仍指向 `colourliving.com`
-- `colourliving.com/` 而家係 **302** 去 `.shop` **首頁**（唔保留路徑）；內頁例如 `/pages/about-us` 回 **404**。應改 **301** 並映射舊路徑，做法見 [09-faq-implementation.md](09-faq-implementation.md)
+- Contact 頁寫 `https://www.colourliving.com`（301 之後呢條會通；將來品牌站反而啱）
+- Herman Miller「Where to buy」仍指向 `colourliving.com`（若已非產品線先要更正／移除；**唔好**只為改成 `.shop` 而聯絡）
+- `colourliving.com/` 而家係 **302** 去 `.shop` **首頁**（唔保留路徑）；內頁例如 `/pages/about-us` 回 **404**。應改 **301** 並映射舊路徑。Vendor 名錄 **保持 `.com`**，見 [com-vs-shop-citations.md](../playbooks/com-vs-shop-citations.md)
 
-**含義：** 未處理 301 同 citation 之前，所有 SEO 投入都會漏去舊站。呢個唔係「優化題」，係「架構題」。處理方法見 [03-foundation.md](03-foundation.md)。
+**含義：** 未把 `.com` 改成 **301 + 內頁對應** 之前，舊深鏈會 404，權重傳唔穩。呢個係架構題，唔係「叫全世界改寫 `.shop`」。做法見 [03-foundation.md](03-foundation.md)。
 
 ---
 
@@ -144,12 +144,15 @@ GSC、GA4、Merchant Center 已裝，代表技術門檻已過。Launch 兩個月
 
 | 優先 | 項目 | 點解先做 |
 | --- | --- | --- |
-| P0 | 域名策略：`.com` → `.shop` 301，統一 citation | 否則所有優化被舊站稀釋 |
+| P0 | 域名策略：`.com` → `.shop` **301**（citation 官網欄保持 `.com`） | 死 `.com` 內頁 404 先會漏權重；唔使發動 vendor 改網址 |
 | P0 | 修復 sitemap、中文 404、模板洩漏、亂碼 | 爬蟲同客人同時受傷 |
 | P0 | 品牌版 `llms.txt` + Organization schema + NAP | SEO + GEO 共同地基 |
 | P1 | 產品標題／描述模板 + 主力 SKU 重寫（中英） | 最大頁面數量、最大長尾 |
 | P1 | 可索引品牌頁 + 品類頁（唔只 filter） | 接住「Gessi 香港」「意大利梳化」 |
-| P1 | Google Business Profile 同所有名錄改指向 `.shop` | Local + 品牌 |
+| P1 | GBP NAP（地址／電話）對齊；Website 用 `.com` 或 `.shop` 均可（自己改） | Local；**唔使**叫品牌商改 locator |
+| P2 | 12 篇「香港邊度買 / 點樣選」權威頁 | GEO 引用原料 |
+| P2 | 產品 FAQ、內部連結、Merchant 資料品質 | 轉換 + 購物結果 |
+| P3 | PR、設計師內容、持續 blog | 有地基先有複利 |
 | P2 | 12 篇「香港邊度買 / 點樣選」權威頁 | GEO 引用原料 |
 | P2 | 產品 FAQ、內部連結、Merchant 資料品質 | 轉換 + 購物結果 |
 | P3 | PR、設計師內容、持續 blog | 有地基先有複利 |

@@ -66,7 +66,7 @@
 | 現象 | 行動 |
 | --- | --- |
 | 完全無 mention | 加強品牌頁答案段 + stockist + `llms.txt` |
-| 有店名但地址錯 / 用舊 `.com` | 修 citation、GBP、Contact |
+| 有店名但地址／電話錯 | 修 citation NAP、GBP；**唔好**為咗 AI 寫咗 `.com` 而叫 vendor 改 `.shop` |
 | 只提競品 | 指南頁標題對準該 prompt，請求索引 |
 | 有 mention 無 link | 頁面權重不足；內連 + 外部 stockist |
 | 事實全對有 link | 維持，把成功句式複製到其他品牌頁 |

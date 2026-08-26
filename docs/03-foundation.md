@@ -6,18 +6,19 @@
 
 ## A. 域名策略（P0）
 
-### 目標狀態
+### 目標狀態（階段 A）
 
-**一個正規網址：`https://colourliving.shop`**
+**一個有內容的店：`https://colourliving.shop`。**  
+`colourliving.com` 全站 301 過去——係過渡，唔係宣布永遠冇品牌域名。
 
-`colourliving.com` 只做 301 永久重定向到對應的 `.shop` URL（首頁對首頁、舊產品對新產品、無法對應則到最接近的品牌或品類頁）。
+對外 **身份** 仍可寫 `colourliving.com`（vendor、名片、建議 GBP）。對外 **購物／廣告** 寫 `.shop`。唔好同時開兩個可瀏覽目錄。
 
 ### 點解唔保留兩個站
 
 - Google 會分薄連結權重
 - AI 會讀到兩套互相矛盾的目錄（舊站 Furniture = 0，新站 Furniture = 198）
 - 品牌搜尋 CTR 被舊站分走
-- Merchant Center / GBP 無法定一個「官方 URL」
+- Merchant Center 的店網址係 `.shop`；GBP Website 可以係 `.com`（301 去店），兩者角色唔同
 
 ### 執行步驟
 
@@ -32,7 +33,7 @@
 
 4. **Canonical 全站指向 `.shop`。** 舊站若暫時仍要開給內部，加 `noindex, follow` **加上** 301，雙重保險。長期應只留 301。
 
-5. **同一日更新所有 citation**：GBP、Facebook、Instagram、LinkedIn、Apple Maps、Bing Places、經銷商「Where to buy」（Gessi、Dornbracht、B&B Italia、Flos、Roca）、HKTB PartnerNet、Time Out（可提交更正）。
+5. **Citation 網址唔好一面倒改 `.shop`。** 品牌商 Where to buy、舊新聞官網欄 **保持 `colourliving.com`**（301 會帶去店）。只改你控制的廣告落地頁、網店、以及（可選）GBP。完整理由見 [playbooks/com-vs-shop-citations.md](../playbooks/com-vs-shop-citations.md)。
 
 6. **GSC**  
    - `.shop` 用 Domain property + URL prefix  
@@ -40,11 +41,11 @@
    - 用 Change of Address（若符合 Google 資格）  
    - `.com` property 觀察 301 被收錄情況，3–6 個月後再決定是否移除
 
-7. **Contact / Footer / Email 簽名 / 名片 / 報價 PDF** 全部改 `.shop`。而家 Contact 仍寫 `colourliving.com`，等於官方自己打自己。
+7. **Contact / Footer** 的可點連結可以去 `.shop`（客人而家要去嘅地方）。名片／報價「Website」可繼續印 `colourliving.com`。電郵永遠 `@colourliving.com`。
 
 ### 過渡期話術
 
-對外只講一個官網。內部可保留舊後台做檔案，但唔好再更新舊前台內容。
+對外身份仍然係 **colourliving.com**（品牌域名）。客人實際購物喺 **colourliving.shop**。兩條用 301 接住，唔好叫 vendor 改兩次。
 
 ---
 
@@ -61,7 +62,8 @@ Google 同 AI 用「知識圖譜」理解 COLOURLIVING。你要提供 **同一�
 | 中文地址 | 香港灣仔洛克道 333 號 |
 | 電話 | +852 2295 6263 |
 | Email | info@colourliving.com（可保留此電郵） |
-| 官網 | https://colourliving.shop |
+| 官網（citation / 品牌身份） | https://colourliving.com （階段 A 由 301 去網店） |
+| 網店（購物、廣告落地） | https://colourliving.shop |
 | 營業 | Mon–Sat 10:00–19:00；Sun & PH 12:00–19:00 |
 | 送貨 | Hong Kong only；滿 HK$3,000 免運（政策頁寫清除外地區） |
 | 主力品牌 | B&B Italia, Maxalto, Giorgetti, Paola Lenti, Gessi, Dornbracht, Fantini, Flos, Preciosa, Roca…（用固定名單，首頁、About、llms.txt、schema `knowsAbout` 一致） |
@@ -184,5 +186,5 @@ Bing Places、Apple Business Connect、小紅書（若有品牌號）的 NAP 同
 - [ ] Sitemap 200，GSC 已提交
 - [ ] hreflang `en-HK` / `zh-HK` 正確
 - [ ] 中文模板洩漏與亂碼已修
-- [ ] GBP 官網為 `.shop`
+- [ ] GBP Website：建議 `colourliving.com`（301 去店）；你自己改得，唔使叫 vendor
 - [ ] 品牌版 `llms.txt` 已上線（草稿見 playbooks）

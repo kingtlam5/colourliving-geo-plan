@@ -1,6 +1,6 @@
 # 09 — 執行 FAQ：域名、Canonical、NAP、Schema、Sitemap、hreflang、Local SEO
 
-對應你提出的 8 條實操問題。2026-08-26 用公開 HTTP 覆核過現況。
+對應你提出的實操問題。2026-08-26 用公開 HTTP 覆核過現況。Vendor 要唔要改網址見第 9 題。
 
 ---
 
@@ -192,7 +192,7 @@ NAP = Name, Address, Phone。
 | Google Business Profile、Facebook、品牌商 Where to buy | 要，同 footer **逐字一致** |
 | Schema JSON-LD（見第 5 題） | 全站一份 Organization／LocalBusiness，機械讀 |
 
-「每一頁的 entity 一致」= 唔好今日寫 Lockhart Road、聽日寫 Lockehart；唔好一頁寫 colourliving.com、一頁寫 .shop；品牌名永遠 COLOURLIVING。
+「每一頁的 entity 一致」= 唔好今日寫 Lockhart Road、聽日寫 Lockehart；品牌名永遠 COLOURLIVING。網址可以有兩個角色：citation／官網用 `colourliving.com`，購物按鈕用 `colourliving.shop`——見 [com-vs-shop-citations.md](../playbooks/com-vs-shop-citations.md)。唔好同一句「官網」有時 .com 有時 .shop。
 
 ### Shopify 點樣全站加 NAP（人眼可見）
 
@@ -361,16 +361,22 @@ Google 會展示：**地圖包、Google 商家檔案、路線、電話、營業�
 ### 你要管的資產
 
 1. **Google Business Profile（最重要）**  
-   類別 Furniture store、地址 333 Lockhart Road、電話、時間、網站 **只填 .shop**、相、每週帖、回覆評論、產品精選
+   類別 Furniture store、地址 333 Lockhart Road、電話、時間、網站建議填 **colourliving.com**（301 去店；你自己控制，Stage B 唔使再改）。Shop 掣／廣告先用 `.shop`。
 2. **網站上的本地頁**  
-   About／Contact／獨立 Showroom 頁，NAP 同 GBP 逐字一致，內嵌地圖、點預約、點去（灣仔站 A1）
+   About／獨立 Showroom 頁，NAP 同 GBP 逐字一致，內嵌地圖、點預約、點去（灣仔站 A1）
 3. **Schema**  
    `FurnitureStore` + 地址 + `openingHoursSpecification`（第 5 題）
 4. **一致 citation**  
-   Facebook、Apple Maps、品牌商 locator 同一套 NAP
+   Facebook、Apple Maps、品牌商 locator：**地址電話逐字一致**；官網欄保持 `.com`，唔好群發改 `.shop`
 5. **評論**  
    到店後邀請真實評價
 
 Local SEO **唔係** 喺每張產品頁重複「我哋喺灣仔」。產品頁負責型號；本地意圖由 GBP + Showroom 頁接住。
 
 同 GEO 的關係：AI 問「香港邊度可以睇 Gessi」，會抄 GBP 同你網站答案段。Local 做好，GEO 一齊受惠。
+
+---
+
+## 9. 301 之後，要唔要叫 vendor 把官網改成 colourliving.shop？
+
+**唔使，亦不應該群發。** 301 令 `.com` 連結繼續用得；將來 `.com` 做品牌站時，同一批 locator 連結自動正確。只改廣告／EDM／產品深鏈去 `.shop`。完整取捨見 [com-vs-shop-citations.md](../playbooks/com-vs-shop-citations.md)。
