@@ -28,9 +28,12 @@
 2. 貼：`https://colourliving.shop/`  
 3. 撳測試 → screenshot **整頁結果**
 
-**而家（改之前）預期：** 見到 Organization，**冇** 灣仔地址、電話、營業時間、FurnitureStore。可能只有名、logo、殘缺社交。
+**重要：而家首頁顯示「No items detected」係正常，唔係網站壞咗。**  
+Rich Results Test **只報會變成搜尋特別樣式的類型**（產品星星、FAQ、本地商家卡）。普通 `Organization`（店名、logo、社交）同 `WebSite` **唔算 rich result**，所以工具當「0 items」。Google 仍然有讀到 schema。
 
-**Publish schema 之後再測同一條 URL：** 應見到 `FurnitureStore`／Local business、`333 Lockhart Road`、電話、營業時間。兩張圖並排就係 before／after。
+要見到而家嗰份 Organization：用 https://validator.schema.org/ 貼首頁 URL，或喺豐富結果頁撳 **VIEW TESTED PAGE** 搜 `ld+json`。  
+測產品頁（例如 Alys 床）先會喺 Rich Results Test 見到 **Product**。  
+Publish FurnitureStore + 地址之後，首頁呢個工具 **有機會** 出現 Local business；仍然以 schema.org validator 做 Organization 的 before／after。
 
 再貼一隻產品 URL（例如 Alys 床）測一次：證明產品價錢 schema **仍然有效**（你冇整壞 checkout 標記）。
 
