@@ -79,7 +79,9 @@ Priority 只標：首頁、About、Contact、Gessi／B&B／Bath／Furniture 等�
 
 長遠若 management 想 `.com` 做品牌站、`.shop` 做電商：品牌站未有內容前仍然應 301。可 disconnect 再開品牌站。階段計劃見 [10-domains-canonical-schema.md](10-domains-canonical-schema.md)。
 
-你而家已經有一層轉址，但有三個問題：用緊 **302**、**只轉首頁**、內頁 **404**。目標改成 **301 永久**，並且處理路徑。
+你而家已經有一層轉址，但有三個問題：用緊 **302**、**只轉首頁**、內頁 **404**。目標改成 **301 永久**，並且處理路徑。而家 DNS 似註冊商 Forwarding，唔係 Shopify IP——見 [wayback-and-www.md](../playbooks/wayback-and-www.md)。
+
+`colourliving.com` 同 `www.colourliving.com` **唔係兩個註冊域名**，但係兩個 hostname，**兩個都要** redirect 去 `.shop`。Shopify Connect `colourliving.com` 一次，DNS 同時改 `@` 同 `www`。
 
 ### 方案 A（最啱 Shopify，優先試）
 

@@ -39,6 +39,7 @@
 | [playbooks/nap-source-of-truth.md](playbooks/nap-source-of-truth.md) | 全網統一 NAP 與簡介 |
 | [playbooks/com-vs-shop-citations.md](playbooks/com-vs-shop-citations.md) | Vendor 官網保持 `.com`；購物用 `.shop` |
 | [playbooks/colourliving-com-current-index.md](playbooks/colourliving-com-current-index.md) | `.com` 而家實際仲有冇頁喺 Google；GSC 點解空白 |
+| [playbooks/wayback-and-www.md](playbooks/wayback-and-www.md) | Wayback 連結同用法；apex vs `www` 要唔要一齊 301 |
 | [playbooks/schema-jsonld-shopify.md](playbooks/schema-jsonld-shopify.md) | Shopify Organization JSON-LD 草稿 |
 | [playbooks/how-to-edit-schema.md](playbooks/how-to-edit-schema.md) | 改 schema 的 Shopify 步驟同可貼內容 |
 | [playbooks/how-to-hreflang.md](playbooks/how-to-hreflang.md) | 英文冇 `/en/`、中文 `zh` 的 hreflang 處理 |
