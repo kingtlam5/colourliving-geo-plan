@@ -23,3 +23,13 @@
 - agents.md = 呢份 briefing 放喺 Shopify 檔案櫃嘅檔名；llms.txt 係印出嚟嘅副本。
 
 三者要 **同一套 NAP**（店名、洛克道、電話、營業時間）。唔一致，Google 同 AI 會各信各嘅。
+
+## 點解 schema 唔使好似 llms.txt 咁寫中文、羅列品牌
+
+Schema 係 **表格欄位**（名、地址、電話、類型、營業時間），唔係文章。Google 填完「呢間係邊間 FurnitureStore」就去讀 **網頁上可見的內容** 同產品 schema。品牌名單、中文介紹、點預約，應該寫喺 About／品牌 collection／中文頁；產品價錢已經有另一份 Product schema。
+
+llms.txt 先係 **短文 briefing**：AI 好多時只抽一份檔，所以先要把中文摘要同主力品牌寫入去。
+
+把長中文或「我哋有 Gessi、B&B…」塞進 Organization JSON，Google 往往忽略；若網頁睇唔到同樣句子，仲可能當 spam。品牌名本身係專有名詞，schema 用英文店名同英文品牌名即可。
+
+可選加分（唔取代 llms.txt）：Organization 加短 `knowsAbout`（B&B Italia、Gessi、Flos…）。真正「香港邊度買 Gessi」仍然靠 collection 頁 + llms.txt + GBP。
