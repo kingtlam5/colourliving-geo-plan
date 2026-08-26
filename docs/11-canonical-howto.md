@@ -69,9 +69,8 @@ Sitemap 亦只列出 `/products/alys-ly153-bed`，冇列出 collection 版。Goo
 
 Shopify Admin 對應位置：
 
-1. 左邊 **Online Store → Navigation**
-2. 頁面最底 **View URL redirects**  
-   （新后台有時係 **Online Store → URL Redirects**，或搜尋「Redirects」）
+1. 左邊 **Content → Menus** → 右上 **URL redirects**  
+   （舊后台：**Online Store → Navigation** 最底 **View URL redirects**；Admin 搜「redirect」都得）
 3. 應有一行：
 
    | Redirect from | Redirect to |

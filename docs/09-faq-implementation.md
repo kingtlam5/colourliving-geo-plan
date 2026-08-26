@@ -97,9 +97,12 @@ Shopify 會對已連接網域做 **301**，並且多數會 **保留路徑**：
 
 `colourliving.com/collections/gessi` → `colourliving.shop/collections/gessi`
 
-注意：舊 Magento 路徑同新 Shopify handle **多數唔同**，所以「保留路徑」之後，舊 URL 可能變成 `.shop` 上的 404。呢個時候要喺 Shopify 開 **URL redirects**：
+注意：舊 Magento 路徑同新 Shopify handle **多數唔同**，所以「保留路徑」之後，舊 URL 可能變成 `.shop` 上的 404。呢個時候先加 **路徑** redirect（域名 301 之後先做）：
 
-**Online Store → Navigation → URL Redirects**（或 Settings → Apps and sales channels → Online Store → URL redirects）
+而家 Admin：**Content → Menus** → 右上 **URL redirects** → Create URL redirect  
+（舊界面：Online Store → Navigation → View URL Redirects）
+
+Redirect from 只填路徑（`/aboutus.htm`），唔填完整 `colourliving.com`。詳情同「只得 homepage 要唔要做內頁」見 [com-redirect-when-only-homepage.md](../playbooks/com-redirect-when-only-homepage.md)。
 
 例：
 
