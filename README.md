@@ -36,6 +36,7 @@
 | [playbooks/how-to-edit-llms-txt.md](playbooks/how-to-edit-llms-txt.md) | Shopify 點改 `/llms.txt`（`agents.md.liquid`） |
 | [playbooks/explain-llms-schema-to-management.md](playbooks/explain-llms-schema-to-management.md) | 用白話向管理層解釋 schema vs llms.txt vs agents.md |
 | [playbooks/show-boss-schema-llms.md](playbooks/show-boss-schema-llms.md) | 唔使睇 code：用 Google 測試工具同 `/llms.txt` screenshot 證明改動 |
+| [playbooks/google-rich-result-types.md](playbooks/google-rich-result-types.md) | 點先出到 Local business／Product／Breadcrumb；FAQ 豐富結果已取消 |
 | [playbooks/agents-md-liquid.md](playbooks/agents-md-liquid.md) | 可貼上 theme 的 `agents.md.liquid` |
 | [playbooks/weekly-rhythm.md](playbooks/weekly-rhythm.md) | 每週 4 小時營運節奏 |
 | [playbooks/nap-source-of-truth.md](playbooks/nap-source-of-truth.md) | 全網統一 NAP 與簡介 |

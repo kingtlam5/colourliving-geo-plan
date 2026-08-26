@@ -239,7 +239,7 @@ Settings → Store details 填正確地址／電話。部分 theme 會自動拉 
 | `Organization` + `FurnitureStore` | 公司係邊間、喺灣仔 | **全站** `theme.liquid`（一份就夠） |
 | `Product` + `Offer` | 名、價、庫存、品牌 | **產品頁**；多數 theme **已經有**，先檢查再加 |
 | `BreadcrumbList` | 層級 | 視 theme；有就唔使重複 |
-| `FAQPage` | 只有該頁真係有獨特 FAQ 先加 | 品牌頁／指南頁 |
+| `FAQPage` | Google **2026-05 起已唔再顯示 FAQ 豐富結果** | 畫面 FAQ 留俾人同 AI；**唔好**為測試工具加全站 FAQPage |
 | `WebSite` + `SearchAction` | 站內搜尋 | 可選，theme.liquid |
 
 **唔好** 裝三個 SEO app 再手寫多一份 Product schema，會重複同衝突。
