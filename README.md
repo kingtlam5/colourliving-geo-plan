@@ -39,6 +39,7 @@
 | [playbooks/nap-source-of-truth.md](playbooks/nap-source-of-truth.md) | 全網統一 NAP 與簡介 |
 | [playbooks/schema-jsonld-shopify.md](playbooks/schema-jsonld-shopify.md) | Shopify Organization JSON-LD 草稿 |
 | [playbooks/how-to-edit-schema.md](playbooks/how-to-edit-schema.md) | 改 schema 的 Shopify 步驟同可貼內容 |
+| [playbooks/how-to-hreflang.md](playbooks/how-to-hreflang.md) | 英文冇 `/en/`、中文 `zh` 的 hreflang 處理 |
 
 ## 一句總原則
 
