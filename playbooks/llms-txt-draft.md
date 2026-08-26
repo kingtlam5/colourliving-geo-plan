@@ -1,7 +1,12 @@
 # 品牌版 llms.txt 草稿
 
-目的：俾 ChatGPT、Perplexity、其他 agent **先讀懂 COLOURLIVING 係邊間店**。  
-Shopify 預設的 UCP 結帳說明應放在 **文檔下半**，或留在 `agents.md`，唔好蓋過品牌事實。
+Shopify **唔係**喺 Admin 上載一個 `llms.txt`。要改 `https://colourliving.shop/llms.txt`，請跟：
+
+[how-to-edit-llms-txt.md](how-to-edit-llms-txt.md)
+
+可貼上 theme 的 Liquid：**[agents-md-liquid.md](agents-md-liquid.md)**（檔名 `templates/agents.md.liquid`，三條 URL 一齊改）。
+
+以下係純文字品牌段，方便法務審。UCP 下半喺 Liquid 檔用 `agents` 物件生成，唔好只貼呢段而刪購物協議。
 
 上線後放到 `https://colourliving.shop/llms.txt`。中英並存，方便兩種 prompt。
 
