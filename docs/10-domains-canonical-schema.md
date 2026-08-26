@@ -101,15 +101,11 @@ Redirect 係「瀏覽器轉走」。Canonical 係「頁仍打開，但聲明正�
 | `/collections/furniture` | 指向自己 正確 |
 | `/collections/bath-1` | 指向 `/collections/bath` **正確**（handle 醜但已正規化） |
 
-### 而家做錯嘅（要修）
+### 而家你見到、但其實已處理緊的
 
-`https://colourliving.shop/pages/contact-us` **實際打開 About**，canonical 亦係 About：
+`https://colourliving.shop/pages/contact-us` **301** 去 About，canonical 亦係 About。若計劃入面 **永遠唔會有獨立 Contact 頁**（聯絡資訊一律放 About），呢個 301 **要留**，唔好刪、唔好再開 Contact。逐步核對見 [11-canonical-howto.md](11-canonical-howto.md)。
 
-- 最終 URL = `/pages/about-us`
-- Title = About Us
-- Sitemap **沒有** Contact 頁
-
-即係 Contact 對 Google 嚟講唔存在。呢個唔係「canonical 概念」，係 **URL Redirect／頁面複製** 問題：有人把 contact-us 轉去 about-us。
+產品 `/collections/furniture/products/alys-ly153-bed` 同 `/products/alys-ly153-bed` 內容相同，但兩邊 canonical **已經**指向 `/products/alys-ly153-bed`。唔使喺 Admin 逐隻貨填 canonical。點樣自己核對同改產品卡連結，同樣見第 11 份。
 
 ---
 
@@ -133,18 +129,11 @@ Redirect 係「瀏覽器轉走」。Canonical 係「頁仍打開，但聲明正�
 
 若 `.com` 可以完整打開同一間店、canonical 卻寫 `.com`，即係你把 `.com` 設成可瀏覽而唔係 redirect。改返「Redirect to primary」。
 
-**Step 3 — 修 Contact（今次一定要做）**
+**Step 3 — 修 Contact（只適用於你想有獨立 Contact 頁）**
 
-1. **Online Store → Navigation → URL redirects**（或 Online Store → URL Redirects）
-2. 搵 `contact-us` → `about-us` 呢類規則，**刪除**（Contact 唔應等於 About）
-3. **Online Store → Pages** → 新增或恢復 **Contact**，handle 用 `contact` 或 `contact-us`
-4. 內容：NAP、地圖、表單、WhatsApp（唔好複製 About 文章）
-5. 該頁 SEO：Search engine listing  
-   - Title：`Contact COLOURLIVING | Wan Chai Showroom`  
-   - URL handle：`contact`  
-   - 唔好把 SEO URL 填去 about-us
-6. Footer／Header 的 Contact 連去新頁
-7. 無痕開 `/pages/contact-us`：應見到 Contact，canonical = `https://colourliving.shop/pages/contact`（或你最終 handle）
+若公司策略係 **唔要 Contact、一律用 About**：唔好刪 301、唔好新建 Contact。改跟 [11-canonical-howto.md](11-canonical-howto.md)。
+
+若將來改策略要獨立 Contact：先刪 `contact-us` → `about-us` 的 redirect，再新建 Pages，handle 唔好同 About 撞。
 
 **Step 4 — 抽查產品同分類（每季 10 條）**
 
@@ -247,7 +236,7 @@ Dornbracht 龍頭頁同樣：brand、sku、價、HKD 有；型號未進 `mpn`。
    **做法：** Theme settings／Social media 只填真實連結；空白的刪掉。Facebook、Instagram、小紅書、WhatsApp 已有就留。唔好留空欄。
 
 2. **Contact 頁變成 About**  
-   Schema 的 Organization `url` 喺 About 變成 `.../pages/about-us`（頁級抄錯）。修好 Contact 轉址後，About 的 Organization 仍應指 **店根 URL** `https://colourliving.shop`，而唔係該頁自己。若 theme 用 `canonical_url` 當 Organization.url，About／Contact 會令「公司官方 URL」每一頁都唔同——**entity 分裂**。Organization.url 應永遠係 shop root。
+   若策略係合併到 About：保持 301 即可（見第 11 份）。若曾想獨立 Contact 先要拆開。Organization.url 應永遠係 shop root `https://colourliving.shop`。
 
 3. **冇實體店類型同 NAP**  
    Default Organization 只有名、logo、部分社交。對 COLOURLIVING 呢個係最大缺口。補 `FurnitureStore` + address + telephone + openingHours。可以用一份 JSON-LD 加喺 `theme.liquid`（見 `playbooks/schema-jsonld-shopify.md`），**或者** 用 theme 的 Store location 功能如果有。  
