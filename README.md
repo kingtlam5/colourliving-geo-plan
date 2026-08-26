@@ -38,6 +38,7 @@
 | [playbooks/weekly-rhythm.md](playbooks/weekly-rhythm.md) | 每週 4 小時營運節奏 |
 | [playbooks/nap-source-of-truth.md](playbooks/nap-source-of-truth.md) | 全網統一 NAP 與簡介 |
 | [playbooks/schema-jsonld-shopify.md](playbooks/schema-jsonld-shopify.md) | Shopify Organization JSON-LD 草稿 |
+| [playbooks/how-to-edit-schema.md](playbooks/how-to-edit-schema.md) | 改 schema 的 Shopify 步驟同可貼內容 |
 
 ## 一句總原則
 

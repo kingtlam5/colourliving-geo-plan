@@ -1,6 +1,8 @@
 # Shopify：Organization / FurnitureStore JSON-LD
 
-放喺 `layout/theme.liquid` 的 `</head>` 前，或獨立 snippet `snippets/schema-organization.liquid` 再用 `{% render 'schema-organization' %}`。
+完整逐步（Hyper／Pillar theme、先清社交空欄再取代 Organization）：[how-to-edit-schema.md](how-to-edit-schema.md)。
+
+放喺現有 Organization 區塊（搜 `"@type": "Organization"`），**取代**舊 script，唔好再加第二份。產品頁 Product schema 唔好動。
 
 **先 View Source 確認 theme 未有同樣 `@type":"Organization"`，避免重複。**  
 地址／電話必須同 [nap-source-of-truth.md](nap-source-of-truth.md) 一致。社交 URL 換成真實官方頁。
@@ -50,8 +52,10 @@
     "name": "Hong Kong"
   },
   "sameAs": [
-    "https://www.instagram.com/colourliving/",
-    "https://www.facebook.com/colourliving"
+    "https://www.facebook.com/colourliving.hk",
+    "https://www.instagram.com/colourliving.hk/",
+    "https://www.xiaohongshu.com/user/profile/6472fd56000000001c029135",
+    "https://wa.me/85259217909"
   ]
 }
 </script>
