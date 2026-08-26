@@ -257,7 +257,7 @@ GSC 好常報：缺 `shippingDetails`、`hasMerchantReturnPolicy`。呢個係 **
 | `mpn`（廠方型號 LY153、3502097090） | 變體 Barcode／SKU 欄位或 metafield → 先把型號放進 Admin，先唔急改 Liquid | 中 |
 | `gtin` | 有條碼先填；冇就唔好造假 | 低 |
 | BreadcrumbList | 可選，theme 有時已有；而家首頁冇 | 低 |
-| FAQPage | 只加喺真係獨特 FAQ 的品牌／指南頁；全站共用訂單 FAQ **唔好**標 | 低 |
+| FAQPage | 只加喺真係獨特 FAQ 的品牌／指南頁；全站共用訂單 FAQ **唔好**標。Google **2026-05 起已唔再顯示 FAQ 豐富結果**，加咗都唔會喺搜尋展開 | 低（對測試工具） |
 | CollectionPage | 品牌頁可後加 | 低 |
 
 ### 你應該點改（務實順序）
