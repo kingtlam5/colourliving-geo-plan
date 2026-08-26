@@ -1,7 +1,72 @@
 # 點樣改 Shopify Schema（步驟 + 可貼內容）
 
+## 停：Edit code 搜 `schema` 會搵錯嘢
+
+Shopify 入面 **「schema」有兩個完全唔同的意思**：
+
+| 你搜 `schema` 見到的 | 真正係咩 | 同 Google SEO 有冇關 |
+| --- | --- | --- |
+| `{% schema %} { "name": "Header", "settings": [ ... ] } {% endschema %}` | Theme 區塊的 **後台設定表**（Customize 那些顏色、勾選） | **無關**。一大堆 default 係正常，**唔好改呢啲** |
+| `<script type="application/ld+json"> { "@type": "Organization" ...}` | **JSON-LD**：寫俾 Google／AI 讀「呢間店係邊、貨幾錢」 | **有關**。我講的 schema 問題係呢舊 |
+
+所以你喺 Edit code 搜 `schema` 見到 Header／Product section 的 settings JSON，**唔係我講嗰個問題**，亦唔使「改善」那些 default。
+
+### 正確第一步：喺 **網站** 睇，唔係喺 theme 盲搜
+
+1. 無痕開 https://colourliving.shop/  
+2. 右鍵 → **查看網頁原始碼**  
+3. 搜：`application/ld+json` 或 `@type`  
+4. 你會見到而家實際輸出（呢個先係「問題」）：
+
+```json
+{
+  "@type": "Organization",
+  "name": "COLOURLIVING",
+  "logo": "https://colourliving.shop/cdn/shop/files/COLOURLIVING_LOGO2.png?...",
+  "sameAs": ["", "https://www.facebook.com/colourliving.hk", "", "https://www.instagram.com/colourliving.hk/", "", "https://wa.me/85259217909", "", "", "小紅書..."],
+  "url": "https://colourliving.shop"
+}
+```
+
+**問題用白話講：**
+
+1. Google 知你叫 COLOURLIVING、有 logo、有幾個社交。  
+2. **唔知** 你喺灣仔洛克道、電話、營業時間、係傢俬店。  
+3. `sameAs` 夾住好多 `""`（空社交欄），等於無效連結。  
+4. 產品頁另外有一份 Product（價錢 HKD）——**呢份合格，唔好郁。**
+
+Edit code 要搵呢段時，搜 **`ld+json`** 或 **`"@type": "Organization"`**，**唔好搜 `schema`。**
+
+### 喺 backend 點 walk 到（唔經「搜 schema」）
+
+**A. 先唔開 Edit code（見到問題本體）**
+
+1. Shopify 左邊唔使撳。用 Chrome 開 https://colourliving.shop/  
+2. View Source → 搜 `ld+json`  
+3. 第一個 script 就係 Organization。對住上面 JSON 睇缺地址、空 sameAs。
+
+**B. 改空 sameAs（Theme 設定，仍然唔使 code）**
+
+1. Admin → **Online Store → Themes → Customize**  
+2. 左下角 **齒輪 Theme settings**  
+3. 開 **Social media**（或 Social accounts）  
+4. 清空所有冇連結的欄；只留 Facebook／Instagram／小紅書／WhatsApp  
+5. Save → 再 View Source 睇 `sameAs` 仲有冇 `""`
+
+**C. 先至 Edit code（要加地址先入呢步）**
+
+1. Themes → Duplicate → **Edit code**  
+2. 左上 **搜尋檔案** 打：`ld+json`（唔好打 schema）  
+3. 打開含 `"@type": "Organization"` 的檔（常見 `layout/theme.liquid` 或 `snippets/` 底下 meta／head）  
+4. **只改嗰一個 Organization 的 `<script>...</script>`**  
+5. 下面 `"@type": "WebSite"` 同產品檔裡的 Product **唔好刪**
+
+然後先做下面「第一部份」清社交；再做「第二部份」貼上完整 FurnitureStore JSON。
+
+---
+
 你用緊 theme：**Hyper（Preset：Pillar Beige v1.4.0）**。  
-而家每頁已經有 1 份 `Organization` + 首頁有 `WebSite`；產品頁另外有 `Product`。要改的係 **公司／店舖身份**，**唔好改、唔好再加一份 Product**。
+要改的係 **公司／店舖身份**，**唔好改、唔好再加一份 Product**。
 
 ---
 
