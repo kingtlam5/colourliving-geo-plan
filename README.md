@@ -33,7 +33,9 @@
 | [playbooks/collection-page-sop.md](playbooks/collection-page-sop.md) | 分類 / 品牌頁 SOP |
 | [playbooks/geo-monthly-prompts.md](playbooks/geo-monthly-prompts.md) | 每月 AI 搜尋監測題庫 |
 | [playbooks/llms-txt-draft.md](playbooks/llms-txt-draft.md) | 品牌版 `llms.txt` 草稿 |
+| [playbooks/how-to-edit-llms-txt.md](playbooks/how-to-edit-llms-txt.md) | Shopify 點改 `/llms.txt`（`agents.md.liquid`） |
 | [playbooks/explain-llms-schema-to-management.md](playbooks/explain-llms-schema-to-management.md) | 用白話向管理層解釋 schema vs llms.txt vs agents.md |
+| [playbooks/show-boss-schema-llms.md](playbooks/show-boss-schema-llms.md) | 唔使睇 code：用 Google 測試工具同 `/llms.txt` screenshot 證明改動 |
 | [playbooks/agents-md-liquid.md](playbooks/agents-md-liquid.md) | 可貼上 theme 的 `agents.md.liquid` |
 | [playbooks/weekly-rhythm.md](playbooks/weekly-rhythm.md) | 每週 4 小時營運節奏 |
 | [playbooks/nap-source-of-truth.md](playbooks/nap-source-of-truth.md) | 全網統一 NAP 與簡介 |
