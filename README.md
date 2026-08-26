@@ -41,6 +41,7 @@
 | [playbooks/how-to-edit-schema.md](playbooks/how-to-edit-schema.md) | 改 schema 的 Shopify 步驟同可貼內容 |
 | [playbooks/how-to-hreflang.md](playbooks/how-to-hreflang.md) | 英文冇 `/en/`、中文 `zh` 的 hreflang 處理 |
 | [playbooks/how-to-find-canonical-issues.md](playbooks/how-to-find-canonical-issues.md) | 點搵 canonical 問題 + 而家最大問題清單 |
+| [playbooks/roca-display-noindex.md](playbooks/roca-display-noindex.md) | 鋪頭 iPad 用 Roca collection：published + noindex |
 | [playbooks/blog-content-sop.md](playbooks/blog-content-sop.md) | Journal／blog 由支柱到發布的流程 |
 
 ## 一句總原則

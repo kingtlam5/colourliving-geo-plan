@@ -4,6 +4,21 @@ Canonical 問題 **唔係** 喺 Shopify Admin 有一個「Canonical 報告」。
 
 產品 `/collections/.../products/...` 兩條 URL **唔算壞**——只要原始碼 canonical 指向 `/products/...`（Alys 已經係）。
 
+## 總結：而家 Canonical 仲有幾大問題？
+
+**除了 `colourliving.com` 之外，`.shop` 上面冇第二個「好大」的 canonical 災難。** 抽查過：
+
+| 項目 | 狀態 |
+| --- | --- |
+| `www` → 非 www `.shop` | 已轉址，正常 |
+| 產品 collection URL vs `/products/` | 已有正確 canonical，**唔使** 301 晒 |
+| `/pages/contact-us` → About | 你有意 301，**留住** |
+| `/collections/bath-1` → `bath` | 已 301，正常 |
+| 中文 `/zh` | 未 publish，暫時 404，唔算 live canonical 問題 |
+| **`colourliving.com` 302 + 內頁 404** | **唯一要優先修的大問題** |
+
+Roca display **唔係 canonical 問題**，係「唔想 Google 索引、但鋪頭 iPad 要開到」。做法係 **繼續 published + noindex**，見 [roca-display-noindex.md](roca-display-noindex.md)。**唔好 unpublish。**
+
 ---
 
 ## 你自己點搵（由易到完整）
@@ -59,8 +74,30 @@ https://httpstatus.io/ 貼：
 | --- | --- | --- | --- |
 | P0 | `https://colourliving.com/` | **302** 去 `.shop` 首頁 | 改 **301**；見域名 FAQ |
 | P0 | `https://colourliving.com/pages/about-us` 等內頁 | **404**，冇轉去 `.shop` | 301 去對應 `.shop` 頁或首頁 |
-| P1 | `https://colourliving.shop/collections/roca-display-1` … `display-11` | 11 個陳列用 collection，各自 canonical 自己，好易變成薄／重複頁 | 若只係店內陳列：Shopify collection **不發布到線上商店**，或加 hidden + noindex；選單唔好連出去 |
-| P2 | `/search?q=...`、`/cart` | 有自我 canonical，搜尋／購物車通常唔應上 Google | 多數 theme 已 noindex cart；GSC 若出現 search 再處理。唔好當產品頁咁優化 |
+| P1 | `https://colourliving.shop/collections/roca-display-1` … `display-11` | 店內 iPad 要用，所以 **必須繼續發布**。對 Google 嚟講係薄／工具頁 | **唔好 Unpublish**（iPad 會 404）。加 `noindex`，見下面 |
+
+除 `.com` 之外，店內產品／品牌／品類頁的 canonical **冇第二個同等大的 tag 錯誤**。Contact→About、bath-1→bath、collection 產品 URL 指向 `/products/` 都屬正確行為。
+
+### Roca display：繼續 published + noindex（iPad 仍然打得開）
+
+Unpublish = 網上 404 = 舖頭 iPad 條 link 死。  
+Noindex = 客人／iPad 仍然開到頁，Google 結果盡量唔出。
+
+**唔好** 用 robots.txt Disallow 呢批 URL（Google 可能反而睇唔到 noindex）。
+
+Edit code → `layout/theme.liquid`，喺 `<head>` 內、`</head>` 前加：
+
+```liquid
+{% if collection and collection.handle contains 'roca-display' %}
+  <meta name="robots" content="noindex, follow">
+{% endif %}
+```
+
+Save → 無痕開 `/collections/roca-display-1` → View Source 搜 `noindex`。  
+選單／SEO 頁唔好推呢 11 條；iPad 書籤照用原 link。
+
+有其他 in-store only collection（handle 唔係 `roca-display`）就加多個 `or collection.handle == 'vea'` 這類條件。
+
 
 ### 睇落似問題、但其實已正確（唔使改 canonical tag）
 
@@ -73,7 +110,7 @@ https://httpstatus.io/ 貼：
 | `/collections/b-b-italia/products/alys-ly153-bed` | 同上 | 同上 |
 | Sitemap 裡的 About、Customer Care、Room Inspiration、Gessi、Sofa… | canonical 指向自己 | 正常 |
 
-產品雙 URL **唔係**「最大 canonical 問題」。最大的係 **`.com` 302 + 內頁 404**，同（若公開）**roca-display-1～11** 呢類不應被索引的 collection。
+產品雙 URL **唔係**「最大 canonical 問題」。最大的係 **`.com` 302 + 內頁 404**。Roca 用 **noindex、保持 published**（[roca-display-noindex.md](roca-display-noindex.md)），唔好當成要 301／unpublish。
 
 ### 選單／內部連結建議（減少 Google 發現第二條產品 URL）
 

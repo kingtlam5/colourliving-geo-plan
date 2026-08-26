@@ -1,5 +1,34 @@
 # 點樣改 Shopify Schema（步驟 + 可貼內容）
 
+## 停：根本冇一個叫 `ld+json` 嘅檔
+
+你喺 Edit code **搵唔到 `ld+json` 呢個檔案，係正常。** Shopify **從來都唔會** 有一個 file 名叫：
+
+- `ld+json`
+- `ld+json.liquid`
+- `application-ld-json.liquid`
+
+`application/ld+json` 只係 HTML 裏面一句標籤：
+
+```html
+<script type="application/ld+json">
+  { "@type": "Organization", ... }
+</script>
+```
+
+呢段文字 **藏喺某個 `.liquid` 檔的內容入面**（多數係 `layout/theme.liquid` 或 `snippets/` 某個 seo／meta／social 檔），唔係獨立檔名。
+
+**Edit code 左上個搜尋盒，有時只搜檔名。** 所以你打 `ld+json` 會 0 結果。要改做：
+
+1. 打開 **`layout/theme.liquid`**（檔名就叫呢個，一定有）
+2. 檔入面 `Ctrl+F` / `Cmd+F` 搜：`sameAs` 或 `ld+json` 或 `Organization`
+3. 若 `theme.liquid` 冇：逐個打開 `snippets/` 裏面檔名有 `seo`、`meta`、`head`、`social` 的，每個檔入面再 `Ctrl+F`
+4. 仍然 0：Themes → ⋯ → **Download theme file**，解壓後用電腦搜尋資料夾內容 `sameAs`（一定搵到，因為網站原始碼已經有呢段）
+
+**搵唔到都唔使停。** Duplicate theme → 打開 `layout/theme.liquid` → 搜 `</head>` → **喺佢上一行**貼本檔第二部份嗰整段 FurnitureStore `<script>`。Google 會讀到灣仔地址。舊嗰份瘦 Organization 之後再刪。
+
+---
+
 ## 停：Edit code 搜 `schema` 會搵錯嘢
 
 Shopify 入面 **「schema」有兩個完全唔同的意思**：
@@ -35,7 +64,33 @@ Shopify 入面 **「schema」有兩個完全唔同的意思**：
 3. `sameAs` 夾住好多 `""`（空社交欄），等於無效連結。  
 4. 產品頁另外有一份 Product（價錢 HKD）——**呢份合格，唔好郁。**
 
-Edit code 要搵呢段時，搜 **`ld+json`** 或 **`"@type": "Organization"`**，**唔好搜 `schema`。**
+Edit code 要搵呢段時，搜 **檔案內容**，唔係搵一個叫 `ld+json` 嘅檔名。  
+**冇** `ld+json.liquid` 呢個 file。佢藏喺某個 `.liquid` 入面，可能仲拆開幾行。
+
+喺 Edit code **左上搜尋盒** 逐個試（要搜 **內容**，唔係只過濾檔名）：
+
+1. `sameAs` ← Hyper 最易中  
+2. `schema.org`  
+3. `Organization`  
+4. `application/ld+json`
+
+請打開這些檔逐個 `Ctrl+F`（唔好靠左邊檔案列表名叫 schema）：
+
+- `layout/theme.liquid`
+- `layout/theme.pagefly.liquid`（如有）
+- `snippets/` 入面所有檔名有 `meta`、`head`、`seo`、`social`、`json`、`schema` 的（呢度的 schema 有時係 JSON-LD，有時係設定表，打開睇有冇 `ld+json`）
+- `sections/header.liquid`
+
+若搜尋盒只搜檔名、搜唔到內容：用瀏覽器下載 theme（Themes → ⋯ → **Download theme file**），解壓後用電腦「在資料夾中搜尋」`sameAs`。
+
+### 搵唔到都可以加地址（備案）
+
+唔好無限搵檔。Duplicate theme 後，打開 **`layout/theme.liquid`**，搵 `</head>`，**喺佢前面**貼上 [how-to-edit-schema.md](how-to-edit-schema.md) 第二部份嗰整段 FurnitureStore `<script>`。
+
+缺點：網站可能短暫有 **兩份** Organization（舊瘦嘅 + 新完整嘅）。Google 通常仍讀到地址；之後用下載 theme 搜 `sameAs` 再刪舊嗰份就得。  
+**仍然唔好** 再加 Product script。
+
+---
 
 ### 喺 backend 點 walk 到（唔經「搜 schema」）
 

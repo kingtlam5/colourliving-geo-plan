@@ -63,3 +63,4 @@ Shopify 篩選可留，但 **唔要** 為每個 filter 組合做 index。`robots
 - [ ] 首屏有答案段
 - [ ] 內部連結到 showroom
 - [ ] 空 collection（0 產品）noindex 或唔發布
+- [ ] 店內 iPad 用的 collection（如 `roca-display-*`）**必須 published**，用 noindex，唔好 unpublish（見 [roca-display-noindex.md](roca-display-noindex.md)）
