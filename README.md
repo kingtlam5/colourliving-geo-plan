@@ -27,6 +27,7 @@
 | [docs/08-roadmap.md](docs/08-roadmap.md) | 30 / 60 / 90 日執行表 |
 | [docs/09-faq-implementation.md](docs/09-faq-implementation.md) | 域名 301、canonical、NAP、schema、sitemap、hreflang、Local SEO |
 | [docs/10-domains-canonical-schema.md](docs/10-domains-canonical-schema.md) | `.com` 品牌站 vs `.shop`、canonical 逐步做、現有 schema 審計 |
+| [docs/11-canonical-howto.md](docs/11-canonical-howto.md) | Contact 用 301 關閉、產品雙 URL 點核對／改 theme |
 | [playbooks/keyword-clusters.md](playbooks/keyword-clusters.md) | 香港市場關鍵字叢集 |
 | [playbooks/product-page-sop.md](playbooks/product-page-sop.md) | 產品頁寫作 SOP |
 | [playbooks/collection-page-sop.md](playbooks/collection-page-sop.md) | 分類 / 品牌頁 SOP |
