@@ -76,6 +76,8 @@ Priority 只標：首頁、About、Contact、Gessi／B&B／Bath／Furniture 等�
 
 **唔需要舊 CMS。** Redirect 發生在「訪客打舊網址 → DNS／轉址服務 → 新站」，同 Magento 無關。
 
+長遠若 management 想 `.com` 做品牌站、`.shop` 做電商：品牌站未有內容前仍然應 301。可 disconnect 再開品牌站。階段計劃見 [10-domains-canonical-schema.md](10-domains-canonical-schema.md)。
+
 你而家已經有一層轉址，但有三個問題：用緊 **302**、**只轉首頁**、內頁 **404**。目標改成 **301 永久**，並且處理路徑。
 
 ### 方案 A（最啱 Shopify，優先試）
