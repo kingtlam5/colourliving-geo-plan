@@ -25,6 +25,7 @@
 | [docs/06-authority.md](docs/06-authority.md) | 品牌權威、媒體、經銷商頁、設計師網絡 |
 | [docs/07-measurement.md](docs/07-measurement.md) | GSC / GA4 / Merchant Center / GEO 監測 |
 | [docs/08-roadmap.md](docs/08-roadmap.md) | 30 / 60 / 90 日執行表 |
+| [docs/09-faq-implementation.md](docs/09-faq-implementation.md) | 域名 301、canonical、NAP、schema、sitemap、hreflang、Local SEO |
 | [playbooks/keyword-clusters.md](playbooks/keyword-clusters.md) | 香港市場關鍵字叢集 |
 | [playbooks/product-page-sop.md](playbooks/product-page-sop.md) | 產品頁寫作 SOP |
 | [playbooks/collection-page-sop.md](playbooks/collection-page-sop.md) | 分類 / 品牌頁 SOP |
@@ -32,6 +33,7 @@
 | [playbooks/llms-txt-draft.md](playbooks/llms-txt-draft.md) | 品牌版 `llms.txt` 草稿 |
 | [playbooks/weekly-rhythm.md](playbooks/weekly-rhythm.md) | 每週 4 小時營運節奏 |
 | [playbooks/nap-source-of-truth.md](playbooks/nap-source-of-truth.md) | 全網統一 NAP 與簡介 |
+| [playbooks/schema-jsonld-shopify.md](playbooks/schema-jsonld-shopify.md) | Shopify Organization JSON-LD 草稿 |
 
 ## 一句總原則
 

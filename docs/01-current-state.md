@@ -4,7 +4,7 @@
 
 總評：網站視覺同品牌調性已經係旗艦店水平；**搜尋系統仍處於「新網域 + 舊網域互食 + 產品頁未為香港搜尋而寫」的階段。** 呢個階段做對 5 件事，效果會遠大於寫 50 篇 blog。
 
-診斷未登入 GSC／GA4，部分技術觀察（例如 sitemap 500、`/zh` 404）需用內部工具覆核。
+診斷未登入 GSC／GA4，部分技術觀察（例如舊 `.com` 內頁 404、中文未 publish）需用內部工具覆核。
 
 ---
 
@@ -19,7 +19,7 @@
 
 - Contact 頁寫 `https://www.colourliving.com`
 - Herman Miller「Where to buy」仍指向 `colourliving.com`
-- 舊站分類數量同新站不一致（舊站 Furniture / Lighting 顯示 0，Bath & Spa 仍有貨），Google 會覺得品牌目錄混亂
+- `colourliving.com/` 而家係 **302** 去 `.shop` **首頁**（唔保留路徑）；內頁例如 `/pages/about-us` 回 **404**。應改 **301** 並映射舊路徑，做法見 [09-faq-implementation.md](09-faq-implementation.md)
 
 **含義：** 未處理 301 同 citation 之前，所有 SEO 投入都會漏去舊站。呢個唔係「優化題」，係「架構題」。處理方法見 [03-foundation.md](03-foundation.md)。
 
@@ -102,7 +102,7 @@
 
 AI 助手若只讀 `llms.txt`，會把你們當成「又一間 Shopify 店」，而唔係「香港頂級歐洲家居旗艦」。呢個係 GEO 最便宜、槓桿最高的修復點。
 
-Sitemap `https://colourliving.shop/sitemap.xml` 公開抓取曾回 500。若屬實，Google 同 AI 都難以完整發現 URL。必須立刻喺 GSC 驗證。
+Sitemap：部分抓取工具對 `https://colourliving.shop/sitemap.xml` 曾回 500；2026-08-26 用 GET 覆核為 **200**，子 sitemap（products／pages）亦 200。以瀏覽器打開同 GSC → Sitemaps 為準，見 [09-faq-implementation.md](09-faq-implementation.md) 第 6 題。
 
 ---
 

@@ -35,7 +35,7 @@
 - [ ] 決定並文件化：canonical = `https://colourliving.shop`
 - [ ] Contact、footer、About 去掉「官網 = colourliving.com」
 - [ ] GBP 官網改 `.shop`，NAP 對齊
-- [ ] 修復 sitemap 500（如仍存在），GSC 提交
+- [ ] 核對 sitemap 喺 GSC 顯示成功（瀏覽器打開 XML 為 200），GSC 提交
 - [ ] 修中文模板洩漏、`LISS?` 類亂碼
 - [ ] 上線品牌版 `llms.txt`（[草稿](../playbooks/llms-txt-draft.md)）
 - [ ] Organization JSON-LD 上首頁

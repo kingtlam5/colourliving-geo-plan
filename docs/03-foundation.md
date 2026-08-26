@@ -28,7 +28,7 @@
    欄位：`old_url | new_url | type | notes`  
    優先對：首頁、About、Contact、品牌、Bath、Kitchen、主力產品 SKU。
 
-3. **301，唔好 302，唔好 JS 跳轉。**
+3. **301，唔好 302，唔好 JS 跳轉。** 而家根網址已係 302，內頁 404；逐步改法見 [09-faq-implementation.md](09-faq-implementation.md)。
 
 4. **Canonical 全站指向 `.shop`。** 舊站若暫時仍要開給內部，加 `noindex, follow` **加上** 301，雙重保險。長期應只留 301。
 
@@ -96,7 +96,7 @@ FAQ 有獨特內容先加 `FAQPage`。而家全站共用訂單 FAQ，唔值得�
 
 ### C1. 發現性
 
-- 驗證 `https://colourliving.shop/sitemap.xml` 是否 200。公開抓取曾見 500，屬 P0。
+- 驗證 `https://colourliving.shop/sitemap.xml` 是否 200（2026-08-26 GET 已係 200）。GSC → Sitemaps 狀態應為成功。查法見 [09-faq-implementation.md](09-faq-implementation.md) 第 6 題。
 - GSC → Sitemaps 提交：`sitemap.xml`（Shopify 會拆 products / collections / pages / blogs）
 - 檢查 `robots.txt`：Shopify 預設已 Disallow filter/sort，應保留，避免千個組合頁。
 - 確認重要頁 **無** `noindex`（密碼、草稿、search、cart 除外）

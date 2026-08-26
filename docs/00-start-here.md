@@ -82,4 +82,6 @@ COLOURLIVING 係「House of Brands」：灣仔洛克道 333 號約 2,000 平方�
 6. **香港繁體 `zh-HK`**，唔好當自己係台灣站或簡體站。
 7. **每週量，每月調，每季先開新內容線**。唔好同步開十條戰線。
 
+執行層（點樣 301、canonical、schema、hreflang）：[09-faq-implementation.md](09-faq-implementation.md)。
+
 下一步：讀 [01-current-state.md](01-current-state.md)。
