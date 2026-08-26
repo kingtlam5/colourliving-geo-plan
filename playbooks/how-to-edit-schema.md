@@ -20,7 +20,7 @@
 
 **Edit code 左上個搜尋盒，有時只搜檔名。** 所以你打 `ld+json` 會 0 結果。要改做：
 
-1. 打開 **`layout/theme.liquid`**（檔名就叫呢個，一定有）
+1. 打開 **`layout/theme.liquid`** 或 **`sections/header.liquid`**（COLOURLIVING 已喺 header 第 307 行搵到）
 2. 檔入面 `Ctrl+F` / `Cmd+F` 搜：`sameAs` 或 `ld+json` 或 `Organization`
 3. 若 `theme.liquid` 冇：逐個打開 `snippets/` 裏面檔名有 `seo`、`meta`、`head`、`social` 的，每個檔入面再 `Ctrl+F`
 4. 仍然 0：Themes → ⋯ → **Download theme file**，解壓後用電腦搜尋資料夾內容 `sameAs`（一定搵到，因為網站原始碼已經有呢段）
@@ -190,29 +190,27 @@ Themes → 現行 **Pillar** → **⋯ → Duplicate**。喺副本改。
    ```
 
 3. Hyper／Pillar 常見位置（你會喺其中一個見到同網站一樣的 `sameAs` 陣列）：
+   - **`sections/header.liquid`** ← COLOURLIVING 實際喺呢度（約第 307 行）
    - `layout/theme.liquid`
-   - `snippets/meta-tags.liquid`
-   - `snippets/head.liquid`
-   - `snippets/schema.liquid`
-   - `layout/theme.pagefly.liquid`（若有，都要一齊改或唔用）
+   - `snippets/meta-tags.liquid` / `snippets/head.liquid`
 
-4. 你應見到類似：
+4. 你應見到類似（COLOURLIVING Hyper header 實際就係呢段）：
 
 ```liquid
 <script type="application/ld+json">
   {
     "@context": "http://schema.org",
     "@type": "Organization",
-    "name": "...",
-    "logo": "...",
-    "sameAs": [ ... ],
-    "url": "..."
+    "name": {{ shop.name | json }},
+    "sameAs": [ {{ settings.social_twitter_link | json }}, ... ],
+    "url": {{ request.origin | append: page.url | json }}
   }
 </script>
 ```
 
-**只改呢一個 Organization 區塊。** 下面果個 `"@type": "WebSite"` **唔好刪。**  
-產品 template 裡的 Product JSON-LD **唔好刪。**
+**只改呢一個 Organization 區塊。** 同一檔若下面有 `"@type": "WebSite"` **唔好刪。**  
+產品 template 裡的 Product JSON-LD **唔好刪。**  
+`header.liquid` 最底嗰個 `{% schema %}` 設定表 **唔好改。**
 
 ### Step 3 — 用下面整段取代 Organization 嗰個 `<script>...</script>`
 
@@ -227,11 +225,13 @@ Themes → 現行 **Pillar** → **⋯ → Duplicate**。喺副本改。
   "name": "COLOURLIVING",
   "legalName": "B.S.C. COLOURLIVING LIMITED",
   "url": {{ shop.url | json }},
+  {%- if settings.logo -%}
   "logo": {
     "@type": "ImageObject",
-    "url": {{ shop.brand.logo | image_url: width: 600 | prepend: 'https:' | json }}
+    "url": {{ settings.logo | image_url: width: 600 | prepend: "https:" | json }}
   },
-  "image": {{ shop.brand.logo | image_url: width: 600 | prepend: 'https:' | json }},
+  "image": {{ settings.logo | image_url: width: 600 | prepend: "https:" | json }},
+  {%- endif -%}
   "telephone": "+852-2295-6263",
   "email": "info@colourliving.com",
   "address": {
@@ -286,11 +286,7 @@ Themes → 現行 **Pillar** → **⋯ → Duplicate**。喺副本改。
 
 ### Step 4 — 確認 Organization 的 url 用 `shop.url`
 
-若你舊 code 係：
-
-```liquid
-"url": "{{ canonical_url }}"
-```
+若你舊 code 係 `"url": {{ request.origin | append: page.url | json }}` 或 `"url": "{{ canonical_url }}"`：
 
 About 頁會變成公司官方 URL = About。新稿用 `{{ shop.url | json }}`，每頁都係店根網址。
 
