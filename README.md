@@ -44,6 +44,7 @@
 | [playbooks/google-rich-result-types.md](playbooks/google-rich-result-types.md) | 點先出到 Local business／Product／Breadcrumb；FAQ 豐富結果已取消 |
 | [playbooks/agents-md-liquid.md](playbooks/agents-md-liquid.md) | 可貼上 theme 的 `agents.md.liquid` |
 | [playbooks/weekly-rhythm.md](playbooks/weekly-rhythm.md) | 每週 4 小時營運節奏 |
+| [playbooks/measure-seo-geo.md](playbooks/measure-seo-geo.md) | Day 0 基準線；地基→技術→On-page→Blog→GEO 點用 GSC／GA／GMC |
 | [playbooks/nap-source-of-truth.md](playbooks/nap-source-of-truth.md) | 全網統一 NAP 與簡介 |
 | [playbooks/com-vs-shop-citations.md](playbooks/com-vs-shop-citations.md) | Vendor 官網保持 `.com`；購物用 `.shop` |
 | [playbooks/colourliving-com-current-index.md](playbooks/colourliving-com-current-index.md) | `.com` 而家實際仲有冇頁喺 Google；GSC 點解空白 |

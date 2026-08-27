@@ -172,7 +172,7 @@ Bucket C 到店
 | 6 | 品類 pillar 或到店流程 pillar（**唔好**再寫一篇 Dornbracht「邊度買」clone） | 另一角度 |
 | 持續 | 每月 GEO 問「Gessi Hong Kong」screenshot | 測量 |
 
-產品 2000 隻 **唔入** 呢季 content plan。只改龍頭英雄 SKU。
+產品 2000 隻 **唔入** 呢季 content plan。只改龍頭英雄 SKU。同一桶唔好寫三篇「邊度買品牌」：[bucket-vs-many-pillars.md](bucket-vs-many-pillars.md)。
 
 Journal：一個 blog；tags：`bathroom` `gessi` `buying-guide` `showroom`。
 

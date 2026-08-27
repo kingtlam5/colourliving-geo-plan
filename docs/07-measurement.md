@@ -2,6 +2,8 @@
 
 未登入你們帳號前，呢份係 **你要自己建立的儀表板規格**。工具已有：GSC、GA4、Merchant Center。缺的是定義同節奏。
 
+**由地基做到 blog／GEO、逐層點撳工具：** [playbooks/measure-seo-geo.md](../playbooks/measure-seo-geo.md)。先做該檔第 0 節 Day 0。
+
 ---
 
 ## A. 只追 12 個數字

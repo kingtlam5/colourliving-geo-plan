@@ -14,7 +14,7 @@ GSC：
 
 Merchant：拒登清單處理 5–10 個 SKU
 
-記錄一條：本週最嚴重技術問題 → 放入 ICE 待辦。
+記錄一條：本週最嚴重技術問題 → 放入 ICE 待辦。逐層指標同 Day 0 做法：[measure-seo-geo.md](measure-seo-geo.md)。
 
 ---
 
