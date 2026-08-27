@@ -2,7 +2,7 @@
 
 唔好一開始開十個 blog category 再倒關鍵字。Luxury 香港店：**先定「要贏的問題」，再開欄，先寫支柱，先至寫短訊。**
 
-四層（Category → Bucket → Cluster → Pillar）點分、點解、邊個先：見 [content-plan-layers.md](content-plan-layers.md)。
+龍頭做第一季的由頭到尾示範（含工具同全文 pillar）：[faucet-season-content-plan.md](faucet-season-content-plan.md)、[pillar-gessi-hong-kong.md](pillar-gessi-hong-kong.md)。
 
 你而家已有 `/blogs/news`、`/blogs/edm`（幾篇舊稿）、舊 `/blogs/trends`。新內容應集中 **一個** 對外 Journal，避免三個半死 blog 互搶。
 
