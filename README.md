@@ -30,6 +30,7 @@
 | [docs/11-canonical-howto.md](docs/11-canonical-howto.md) | Contact 用 301 關閉、產品雙 URL 點核對／改 theme |
 | [playbooks/keyword-clusters.md](playbooks/keyword-clusters.md) | 香港市場關鍵字叢集 |
 | [playbooks/content-plan-layers.md](playbooks/content-plan-layers.md) | Category／bucket／cluster／pillar 分別、先後同點用 |
+| [playbooks/bucket-vs-many-pillars.md](playbooks/bucket-vs-many-pillars.md) | 一個桶點樣拆成角度唔同的 pillar，避免改品牌名複製 |
 | [playbooks/faucet-season-content-plan.md](playbooks/faucet-season-content-plan.md) | 龍頭為 P0：工具搵 bucket／cluster + 90 日順序 |
 | [playbooks/pillar-gessi-hong-kong.md](playbooks/pillar-gessi-hong-kong.md) | Gessi Hong Kong 可發布 pillar + 用詞註解 |
 | [playbooks/pillar-blog-format.md](playbooks/pillar-blog-format.md) | Pillar 字數、詞頻、Q&A、內外連規格 |

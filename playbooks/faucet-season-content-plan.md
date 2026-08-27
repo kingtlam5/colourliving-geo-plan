@@ -169,7 +169,7 @@ Bucket C 到店
 | 2 | 發布 Gessi pillar（下節／另檔全文） | Pillar |
 | 3 | Gessi collection ↔ pillar 雙向內連；2 個英雄 PDP 答案段 | 應用 |
 | 4–5 | Fortify Dornbracht collection | Cluster |
-| 6 | 品類 pillar 或 Dornbracht pillar（只選 1） | Pillar |
+| 6 | 品類 pillar 或到店流程 pillar（**唔好**再寫一篇 Dornbracht「邊度買」clone） | 另一角度 |
 | 持續 | 每月 GEO 問「Gessi Hong Kong」screenshot | 測量 |
 
 產品 2000 隻 **唔入** 呢季 content plan。只改龍頭英雄 SKU。

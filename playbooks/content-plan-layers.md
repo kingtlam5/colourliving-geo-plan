@@ -2,6 +2,8 @@
 
 你講嘅「第一個 step 揀 categories」係啱嘅。後面三個詞好易撞車，因為人人定義唔同。COLOURLIVING 用下面呢套即可——**四層，一層細過一層，每層只做一件事。**
 
+龍頭為第一 category 的完整今季計劃（工具、cluster 表、可發布文）：[faucet-season-content-plan.md](faucet-season-content-plan.md)、[pillar-gessi-hong-kong.md](pillar-gessi-hong-kong.md)。
+
 ```
 生意揀 Category（賣咩／想要邊類詢盤）
         ↓
@@ -30,9 +32,11 @@
 一句：
 
 - Category = **賣咩**  
-- Bucket = **今季講咩主題**  
+- Bucket = **今季講咩主題（範圍，唔係文題）**  
 - Cluster = **人點搜、邊頁收**  
-- Pillar = **寫一篇去贏呢個問題**
+- Pillar = **寫一篇去贏一個唔同的問題**（同一桶唔好複製「邊度買 X」）
+
+一個桶點樣拆成唔撞的幾篇：[bucket-vs-many-pillars.md](bucket-vs-many-pillars.md)。
 
 ---
 
