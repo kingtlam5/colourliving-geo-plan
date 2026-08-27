@@ -100,7 +100,7 @@ GA4 要把漏斗 B 當成一等轉換。否則 SEO 會被誤判為「冇用」�
 | --- | --- | --- |
 | 技術 | GSC 覆蓋、sitemap、hreflang、schema | 週一 90 分鐘 |
 | 目錄 | 產品標題、描述、標籤、缺貨 | 週二、四 90 分鐘 |
-| 內容 | 品牌頁、品類頁、1 篇指南 | 週三 120 分鐘 |
+| 內容 | 跟 [content-workflow.md](../playbooks/content-workflow.md)：步驟 2 改貨頁；步驟 5 先至寫指南 | 週三 120 分鐘（只做其中一段） |
 | GEO | 跑 prompt 集、改 `llms.txt`、FAQ | 週五 45 分鐘 |
 | 本地 | GBP 帖文、相片、評論回覆 | 週五 30 分鐘 |
 

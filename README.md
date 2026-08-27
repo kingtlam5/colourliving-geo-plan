@@ -31,7 +31,7 @@
 | [playbooks/keyword-clusters.md](playbooks/keyword-clusters.md) | 香港市場關鍵字叢集 |
 | [playbooks/content-workflow.md](playbooks/content-workflow.md) | Content 五步：先 catalog，後 query→bucket→cluster→只寫文 |
 | [playbooks/bucket-vs-many-pillars.md](playbooks/bucket-vs-many-pillars.md) | 一個桶點樣拆成角度唔同的 pillar，避免改品牌名複製 |
-| [playbooks/faucet-season-content-plan.md](playbooks/faucet-season-content-plan.md) | 龍頭為 P0：工具搵 bucket／cluster + 90 日順序 |
+| [playbooks/faucet-season-content-plan.md](playbooks/faucet-season-content-plan.md) | 龍頭示範：同一五步（catalog 完先至 bucket→cluster→文） |
 | [playbooks/pillar-gessi-hong-kong.md](playbooks/pillar-gessi-hong-kong.md) | Gessi Hong Kong 可發布 pillar + 用詞註解 |
 | [playbooks/pillar-blog-format.md](playbooks/pillar-blog-format.md) | Pillar 字數、詞頻、Q&A、內外連規格 |
 | [playbooks/product-page-sop.md](playbooks/product-page-sop.md) | 產品頁寫作 SOP |

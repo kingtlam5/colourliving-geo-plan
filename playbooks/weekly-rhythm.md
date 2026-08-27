@@ -26,14 +26,14 @@ Merchant：拒登清單處理 5–10 個 SKU
 
 ---
 
-## 週三 — 頁面 120 分鐘
+## 週三 — 跟而家喺 content 五步的邊一段（120 分鐘）
 
-二揀一，唔好兩個都做一半：
+**二揀一，唔好同一日撈：**
 
-- 打磨 1 個品牌頁或品類頁（中英）
-- 或寫 1 篇支柱指南的大綱／初稿
+- 若仲喺 [content-workflow.md](content-workflow.md) **步驟 2**：打磨 1 個品牌頁或品類頁（中英），用 [collection-page-sop.md](collection-page-sop.md)
+- 若已到 **步驟 5**：寫 1 篇 Journal 大綱／初稿，用 [blog-content-sop.md](blog-content-sop.md)／[pillar-blog-format.md](pillar-blog-format.md)
 
-用 [collection-page-sop.md](collection-page-sop.md)。
+唔好週三上半改 collection、下半寫文當「同一份內容工」。
 
 ---
 

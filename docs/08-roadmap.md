@@ -12,8 +12,8 @@
 | --- | --- | --- | --- |
 | 0 | 第 1–3 日 | 基準線 | GSC/GA4/GMC 截圖 + 本診斷對照 |
 | 1 | 第 1–30 日 | 地基 | 域名、NAP、sitemap、中文修復、llms.txt、GBP |
-| 2 | 第 31–60 日 | 錢貨頁 | 品牌頁、品類頁、Top SKU 中英、Merchant |
-| 3 | 第 61–90 日 | 被引用 | 6–12 篇支柱、GEO 監測、stockist、內部連結 |
+| 2 | 第 31–60 日 | 錢貨頁（content 步驟 2） | 選定 category 的 collection／品牌／PDP |
+| 3 | 第 61–90 日 | 文章（content 步驟 3–5） | 該 category 的 bucket→cluster→Journal；GEO |
 
 ---
 
@@ -67,7 +67,9 @@
 
 ---
 
-## Phase 2 — 日 31–60 錢貨頁
+## Phase 2 — 日 31–60 錢貨頁（content 步驟 2）
+
+呢 30 日 **只優化 catalog**，唔寫 Journal。跟 [content-workflow.md](../playbooks/content-workflow.md) 步驟 2。先做完 P0 category（龍頭）相關頁，先至擴其他品牌。
 
 ### 週 5–6 品牌與品類
 
@@ -102,16 +104,16 @@
 
 ### 內容
 
-每週 1 篇支柱（中英），優先：
+跟 [content-workflow.md](../playbooks/content-workflow.md)：該 category 的 collection／品牌／PDP **已喺步驟 2 做完**，呢 30 日只做步驟 3–5（bucket → cluster → Journal）。唔好邊寫文邊改 collection。
 
-1. Wan Chai showroom guide  
-2. B&B Italia Hong Kong  
-3. Gessi Hong Kong  
-4. Designer sofa for HK apartments  
-5. European faucets buying guide  
-6. Flos in Hong Kong  
+今季若 P0 係龍頭，先寫龍頭三篇（見 [faucet-season-content-plan.md](../playbooks/faucet-season-content-plan.md)），梳化／燈飾留下一個 category。每週最多 1 篇支柱（中英）：
 
-其餘 6 篇可延入下一季。
+1. Gessi：Where to see / specify in Hong Kong（龍頭桶 A）  
+2. European faucets：指定香港浴室（龍頭桶 B）  
+3. Wan Chai bathroom visit（龍頭桶 C）  
+4. （下一 category 先至）B&B Italia / sofa / Flos  
+
+其餘可延入下一季。
 
 ### GEO 與權威
 

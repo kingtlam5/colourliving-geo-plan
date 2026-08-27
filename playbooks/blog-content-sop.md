@@ -3,7 +3,8 @@
 Catalog 優化（collection／品牌／產品）係流程 **第 2 步**，用 [collection-page-sop.md](collection-page-sop.md)／[product-page-sop.md](product-page-sop.md)，**唔用呢份。**  
 總順序：[content-workflow.md](content-workflow.md)。
 
-呢份只講：brief → 寫 Journal → 發布 → 文章連去 **已經優化** 的貨頁。
+呢份只講：brief → 寫 Journal → 發布。文章 **連去** 已經優化的貨頁。  
+**唔包括** 改 collection H1、答案段、或「發布後返去改品牌頁」。
 
 龍頭示範文：[pillar-gessi-hong-kong.md](pillar-gessi-hong-kong.md)。格式：[pillar-blog-format.md](pillar-blog-format.md)。
 
@@ -11,18 +12,18 @@ Catalog 優化（collection／品牌／產品）係流程 **第 2 步**，用 [c
 
 ---
 
-## 總流程（每次都跟呢條，唔好跳）
+## 寫一篇文的順序（唔好跳）
 
 ```
 1. 開／整理 1 個 Blog + 少量 tags
 2. 每篇寫 Brief（關鍵字只得 1 個主 + 2 個輔）— 詞來自流程第 4 步的 cluster
 3. 寫作（答案段 → H2 問題 → 內連 **已優化** 的產品／品牌頁）— [pillar-blog-format.md](pillar-blog-format.md)
 4. On-page SEO + 圖 + 作者
-5. 發布 → 文章連 collection；**唔好** 用呢步去改 collection H1
+5. 發布。文內已連 collection 就完。唔好喺呢步改 collection。
 6. 每月只加 1–2 篇支柱
 ```
 
-呢份 **唔包括** 優化 collection。第 2 步 catalog 未完成就唔好開始呢份。
+第 2 步 catalog 未完成就唔好開始呢份。
 
 ---
 
@@ -34,7 +35,7 @@ Bucket 同 cluster 喺 [content-workflow.md](content-workflow.md) 第 3–4 步�
 
 90 日只承諾該 category 下 3–6 篇角度唔同的文（見 [bucket-vs-many-pillars.md](bucket-vs-many-pillars.md)）。下表係題庫，**唔係** 叫你一次寫晒、亦唔係同 catalog 工單撈埋。
 
-複製下表，填「主關鍵字／目標 URL／狀態」。90 日只承諾前 6 篇。
+複製下表當跨季題庫。**今季只寫當前 category 已完成步驟 3–4 的題**（龍頭見 faucet-season），唔好一次寫晒梳化／燈飾。
 
 | # | 題目（H1 草稿） | 主搜尋意圖 | 必連去 |
 | --- | --- | --- | --- |
@@ -90,7 +91,7 @@ CTA：Book showroom / WhatsApp
 作者：真名 + 職位
 ```
 
-主關鍵字必須同某頁 **分工**：品牌頁打 `Gessi Hong Kong` 短詞；blog 打「where to buy / 點樣選」長問題。唔好 blog 同 collection 搶同一個 H1。
+H1 用問題句或長意圖，**唔好** 同第 2 步已優化的 collection H1 逐字相同。文章連去嗰頁，唔喺呢步改嗰頁。
 
 ---
 
@@ -123,9 +124,8 @@ CTA：Book showroom / WhatsApp
 - 圖：檔名同 alt 含品牌／品類，陳列室實拍更好  
 - 內連最少 3 條去 collection／product／about  
 
-**發布後：**
+**發布後（仍然係寫文工單，唔改貨頁）：**
 
-- 品牌 collection 文案加「Read：Gessi in Hong Kong」連返呢篇  
 - GSC URL 檢查 → 請求編入索引（只限支柱，唔好全站狂撳）
 
 ---
@@ -134,9 +134,9 @@ CTA：Book showroom / WhatsApp
 
 | 週 | 做 |
 | --- | --- |
-| 每週 | 1 篇支柱 **或** 產品標題 20 隻（產品優先） |
+| 每週 | 最多 1 篇支柱（第 5 步） |
 | 每月 | 對 GEO prompt 集：呢篇有冇被 AI 抄 |
-| 唔做 | 每日「潮流家居 5 大趨勢」無產品、無地址 |
+| 唔做 | 每日「潮流家居 5 大趨勢」無產品、無地址；亦唔好喺寫文週夾雜改 collection |
 
 ---
 
@@ -146,8 +146,9 @@ CTA：Book showroom / WhatsApp
 | --- | --- |
 | 先開 10 個 blog category | 1 個 Journal + tags |
 | 先做大關鍵字表再想題 | 先 12 條支柱，關鍵字服務題目 |
-| Blog 同品牌頁同一個 H1 | 頁打品牌短詞，文打問題 |
+| 文同品牌頁同一個 H1 | 文打問題句；貨頁 H1 已喺第 2 步定好 |
 | 無內連 | 每篇最少 3 條去錢貨頁 |
 | EDM 活動當 SEO | 活動放 Journal tag `event`，唔另開一個 blog 主場 |
+| 寫作 SOP 裡教改 collection | Catalog 只屬第 2 步 |
 
-**一句：category 唔係第一步。第一步係 12 條能連去現有品牌／品類頁的問題；第一步先開一個 Journal。**
+**一句：** 呢份從第 5 步先開始。Category 係第 1 步；貨頁係第 2 步；query→bucket→cluster 係第 3–4 步。

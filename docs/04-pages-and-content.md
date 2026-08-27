@@ -163,6 +163,9 @@ B&B Italia, Maxalto, Giorgetti, Paola Lenti, Gessi, Dornbracht, Fantini, Flos, P
 
 ## G. 內容系統（指南頁，唔係「為寫而寫」）
 
+**Content 五步（唔好撈 catalog 同寫文）：** [content-workflow.md](../playbooks/content-workflow.md)  
+1 揀 category → 2 優化 collection／品牌／產品 → 3 query 歸 bucket → 4 文章 keyword cluster → 5 先至寫 Journal。
+
 舊 `/blogs/trends` 2022 hospitality 稿可以留作 archive，但 **新內容要用新樞紐**，每篇對應一條可贏的問題。
 
 90 日只寫 **12 篇支柱**（中英可同頁雙語，或兩個 URL 用 hreflang）：
@@ -189,7 +192,7 @@ B&B Italia, Maxalto, Giorgetti, Paola Lenti, Gessi, Dornbracht, Fantini, Flos, P
 - 作者真名 + 職位（E-E-A-T）
 - 更新日期
 
-產量目標：**每週 1 篇支柱，而唔係每日一篇空文。** 同時每週重寫 20–40 個產品標題。
+產量目標：**每週最多 1 篇支柱**（步驟 5），而唔係每日一篇空文。產品標題改寫屬步驟 2 catalog，唔同寫文週撈埋做。
 
 ---
 

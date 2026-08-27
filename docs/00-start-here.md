@@ -77,7 +77,7 @@ COLOURLIVING 係「House of Brands」：灣仔洛克道 333 號約 2,000 平方�
 1. **一個正規網址（canonical domain）**。兩個網店同時活著，等於把 50 年品牌權重劈開。
 2. **品牌名永遠用 COLOURLIVING**，地址永遠用 `333 Lockhart Road, Wan Chai, Hong Kong`，電話永遠用 `+852 2295 6263`。所有平台同一套 NAP。
 3. **歐洲品牌名唔翻譯**。Gessi 就係 Gessi，唔好寫成「傑西」。中文補品類詞：龍頭、浴缸、梳化。
-4. **產品頁先於 Blog**。launch 兩個月，最大漏洞係產品標題、描述、結構化資料同中文，而唔係沒有文章。
+4. **Content 跟五步，catalog 先於文章。** 揀 category → 優化 collection／品牌／產品 → 先至搜 query、做 bucket、cluster、寫 Journal。講寫文時唔好撈埋改 collection。詳見 [content-workflow.md](../playbooks/content-workflow.md)。
 5. **寫俾人，同時寫俾模型**。每頁開頭 40–80 字要能直接回答一個真實問題。
 6. **香港繁體 `zh-HK`**，唔好當自己係台灣站或簡體站。
 7. **每週量，每月調，每季先開新內容線**。唔好同步開十條戰線。

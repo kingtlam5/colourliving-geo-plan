@@ -1,4 +1,6 @@
-# 產品頁 SOP
+# 產品頁 SOP（**只限流程第 2 步**）
+
+總順序：[content-workflow.md](content-workflow.md)。同 collection SOP 一齊做完就停；寫 Journal 唔用呢份。
 
 每次改一個 SKU 都走完整張清單。英雄產品用人工；長尾可用模板但要過眼。
 

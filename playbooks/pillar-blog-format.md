@@ -2,7 +2,9 @@
 
 適用所有 Journal 支柱，唔限 Gessi。示範文：[pillar-gessi-hong-kong.md](pillar-gessi-hong-kong.md)。
 
-**目標：** Google 有一頁可排「問題意圖」；ChatGPT／Perplexity 有一段可抄的事實。Collection 仍然係品牌／品類的 **正規目錄頁**；blog 唔好同 collection 用同一個 H1 搶貨盤。
+**適用時機：** 流程第 5 步（寫 Journal）。貨頁已喺第 2 步優化。  
+**目標：** Google 有一頁可排「問題意圖」；ChatGPT／Perplexity 有一段可抄的事實。  
+文內 **連去** collection；**唔好** 同 collection 用同一個 H1。呢份唔教改 collection。
 
 中英 **分開兩篇** 最好（事實一致、唔機翻）。若同頁雙語，兩種語言都要有完整答案段，唔好英文 1,200 字、中文 80 字。
 
@@ -94,7 +96,7 @@ H2 例（揀 4–6 個，唔好 12 個）：
 
 **頻率：** 大約每 150–250 字一條內連，平均分佈；唔好全部堆在文末。
 
-發布後：**正規 collection 必須連返呢篇**（雙向）。呢條唔計入文章內連配額，而係 collection 頁的工作。
+發布後文章側已完：文內連去貨頁即夠。Collection 要唔要加「Read this Journal」屬第 2 步 catalog 維護，**唔寫入呢份寫作規格**。
 
 ---
 

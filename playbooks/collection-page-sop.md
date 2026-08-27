@@ -1,4 +1,7 @@
-# 分類 / 品牌頁 SOP
+# 分類 / 品牌頁 SOP（**只限流程第 2 步**）
+
+總順序：[content-workflow.md](content-workflow.md)。  
+呢份做完就停。之後寫 Journal **唔用** 呢份，亦唔好喺寫作討論裡重開呢張清單。
 
 ## 品牌頁
 
@@ -30,7 +33,7 @@
 
 ## 品類頁
 
-**URL：** 語意清晰，例如 `/collections/bathroom-faucets`，**唔用** `bath-1`。
+**URL：** 語意清晰。直播品類 handle 係 `/collections/bathroom-faucet`（單數），**唔用** `bath-1`。
 
 **H1：** 品類 + Hong Kong / 香港  
 例：European bathroom faucets in Hong Kong  

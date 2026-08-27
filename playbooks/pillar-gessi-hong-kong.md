@@ -1,7 +1,7 @@
 # Pillar 示範：Gessi taps in Hong Kong（可發布 + 寫作註解）
 
 對應計劃：[faucet-season-content-plan.md](faucet-season-content-plan.md)  
-Bucket A（邊度睇／指定歐洲龍頭）・Cluster Gessi-HK・正規目錄頁仍係 `/collections/gessi`。
+流程第 5 步示範文。Bucket A・Cluster A1。文內連 `/collections/gessi`（該頁屬第 2 步，已優化，呢篇唔改佢）。
 
 建議 Shopify：Journal 一篇；tags `bathroom` `gessi` `buying-guide` `showroom`。  
 Meta title：`Gessi Taps in Hong Kong | COLOURLIVING Wan Chai`（約 55 字元）  
@@ -119,4 +119,4 @@ COLOURLIVING 於灣仔**洛克道 333 號**旗艦店陳列 Gessi 浴室龍頭。
 
 **COLOURLIVING / 地址：** 店名約 5 次；完整 NAP 集中在「Wan Chai」那節同文末，唔每段貼一次洛克道。
 
-**發布後：** 去 `/collections/gessi` 答案段加一句連返呢篇文章（雙向）。GSC URL 檢查提交 Journal URL。90 日用同一條 prompt「Where to buy Gessi taps in Hong Kong」screenshot。
+**發布後：** GSC URL 檢查提交 Journal URL。90 日用 prompt「Where to see Gessi taps in Hong Kong」screenshot。**唔好** 用發布後工單去改 `/collections/gessi`。

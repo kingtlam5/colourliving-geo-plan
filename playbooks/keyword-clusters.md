@@ -1,12 +1,15 @@
-# 關鍵字叢集（香港市場）
+# 關鍵字叢集（香港市場）— **流程第 2 步：貨頁詞表**
 
-呢份係 **工作用叢集**，唔係 Semrush 匯出。Launch 兩個月，用 GSC 實際 query 覆蓋呢張表；有搜尋量工具再補數字。
+呢份係 **collection／品牌頁／產品頁** 打邊堆詞，屬 [content-workflow.md](content-workflow.md) **步驟 2**。  
+文章用的 cluster 喺步驟 4 另組，見 [faucet-season-content-plan.md](faucet-season-content-plan.md)，**唔好** 把下面「目標 URL」讀成寫文工單。
+
+工作用叢集，唔係 Semrush 匯出。Launch 兩個月，用 GSC 實際 query 覆蓋呢張表。
 
 原則：
 
 - 品牌名保持英文
 - 中文用香港繁體
-- 每叢集 **一個正規 URL**，其他詞做支援（H2、FAQ、內連）
+- 每叢集 **一個貨頁 URL**，其他詞做該頁 H2、FAQ、內連
 - 先打 P0，再 P1
 
 意圖標記：`B` 品牌 / `C` 品類 / `T` 交易型號 / `L` 本地 / `P` 問題指南
@@ -123,25 +126,16 @@ H1 例：`B&B Italia Hong Kong | COLOURLIVING Wan Chai`
 
 ---
 
-## Cluster 8 — 問題／項目（P1，指南頁）
+## Cluster 8 — 問題／項目（唔屬呢份）
 
-| 詞 | 指南 |
-| --- | --- |
-| where to buy gessi in hong kong | Gessi 支柱 |
-| b&b italia authorised dealer hong kong | B&B 支柱 |
-| how to choose sofa for small hong kong apartment | 梳化指南 |
-| bathroom renovation taps hong kong | 龍頭指南 |
-| 浴室翻新 龍頭 | 同上 zh |
-| 豪宅傢俬 | 首頁或 about + 傢俬指南 |
-| FF&E hong kong | for-designers |
-| hospitality bathroom hong kong | Gessi/Dornbracht 指南 |
+「where to buy / 點樣選」類 query 屬流程 **第 3–4 步** 的文章 bucket／cluster，唔喺呢份貨頁表指定指南 URL。見 [content-workflow.md](content-workflow.md)、[faucet-season-content-plan.md](faucet-season-content-plan.md)。
 
 ---
 
 ## 用 GSC 覆蓋呢張表的方法
 
 1. 匯出 3 個月 queries
-2. 標記已有曝光的詞 →  fortify 現有 URL（改 title、答案段）
+2. 標記已有曝光的詞 → 喺 **步驟 2** 改該貨頁 title、答案段
 3. 零曝光但戰略必須的詞（gessi hong kong）→ 建品牌頁並手動請求索引
 4. 發現意料之外的型號詞 → 檢查該 PDP title 是否包含型號
 
