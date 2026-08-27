@@ -1,8 +1,11 @@
-# Blog／Journal 內容 SOP（正確流程）
+# Blog／Journal 內容 SOP（**只限流程第 5 步：寫文**）
 
-唔好一開始開十個 blog category 再倒關鍵字。Luxury 香港店：**先定「要贏的問題」，再開欄，先寫支柱，先至寫短訊。**
+Catalog 優化（collection／品牌／產品）係流程 **第 2 步**，用 [collection-page-sop.md](collection-page-sop.md)／[product-page-sop.md](product-page-sop.md)，**唔用呢份。**  
+總順序：[content-workflow.md](content-workflow.md)。
 
-龍頭做第一季的由頭到尾示範（含工具同全文 pillar）：[faucet-season-content-plan.md](faucet-season-content-plan.md)、[pillar-gessi-hong-kong.md](pillar-gessi-hong-kong.md)。
+呢份只講：brief → 寫 Journal → 發布 → 文章連去 **已經優化** 的貨頁。
+
+龍頭示範文：[pillar-gessi-hong-kong.md](pillar-gessi-hong-kong.md)。格式：[pillar-blog-format.md](pillar-blog-format.md)。
 
 你而家已有 `/blogs/news`、`/blogs/edm`（幾篇舊稿）、舊 `/blogs/trends`。新內容應集中 **一個** 對外 Journal，避免三個半死 blog 互搶。
 
@@ -11,42 +14,25 @@
 ## 總流程（每次都跟呢條，唔好跳）
 
 ```
-1. 生意目標（90 日要邊類詢盤）
-2. 選 8–12 條支柱題（對準已有品牌／品類頁）
-3. 開／整理 1 個 Blog + 少量 tags（唔係先開 20 個 category）
-4. 每篇寫 Brief（關鍵字只得 1 個主 + 2 個輔）
-5. 寫作（答案段 → H2 問題 → 內連產品／品牌）— 字數、詞頻、連結配額見 [pillar-blog-format.md](pillar-blog-format.md)
-6. On-page SEO + 圖 + 作者
-7. 發布 → 內連舊頁 → GSC 抽查
-8. 每月只加 1–2 篇支柱，唔好每日灌水
+1. 開／整理 1 個 Blog + 少量 tags
+2. 每篇寫 Brief（關鍵字只得 1 個主 + 2 個輔）— 詞來自流程第 4 步的 cluster
+3. 寫作（答案段 → H2 問題 → 內連 **已優化** 的產品／品牌頁）— [pillar-blog-format.md](pillar-blog-format.md)
+4. On-page SEO + 圖 + 作者
+5. 發布 → 文章連 collection；**唔好** 用呢步去改 collection H1
+6. 每月只加 1–2 篇支柱
 ```
 
-產品頁、品牌頁 SOP 仍然優先過 blog。Blog 係補「香港邊度買／點樣選」呢類 Google 同 AI 會抄的問題，**唔係流量工廠。**
+呢份 **唔包括** 優化 collection。第 2 步 catalog 未完成就唔好開始呢份。
 
 ---
 
-## Step 1 — 先定生意，唔好先定 category
+## 題目從邊來（第 3–4 步已做完）
 
-問自己（寫低）：
+Bucket 同 cluster 喺 [content-workflow.md](content-workflow.md) 第 3–4 步產生。呢度唔再揀 category、唔再優化 collection。
 
-- 90 日最想多啲：浴室龍頭詢盤、B&B 預約、定設計師 FF&E？
-- 邊啲品牌有合約、有陳列、可以公開講 retailer？
+「必連去」= 第 2 步已優化的 URL，文章 **連結** 過去，唔係喺呢步改嗰頁。
 
-輸出：最多 **三個主題桶**，例如：
-
-| 桶 | 例子 |
-| --- | --- |
-| 品牌授權／邊度買 | Gessi Hong Kong、B&B Italia Wan Chai |
-| 品類點揀（香港單位） | 梳化呎吋、獨立浴缸、恆溫龍頭 |
-| 到店／項目 | Showroom 點預約、設計師 trade |
-
-**仲未開 Shopify blog category。**
-
-對照 [keyword-clusters.md](keyword-clusters.md) 的 Cluster 8（問題型）同品牌 P0。每條支柱必須能連去一個 **已存在** 的 collection 或產品，否則先做品牌頁、唔好先寫文。
-
----
-
-## Step 2 — 定 12 篇支柱清單（先於任何 category）
+90 日只承諾該 category 下 3–6 篇角度唔同的文（見 [bucket-vs-many-pillars.md](bucket-vs-many-pillars.md)）。下表係題庫，**唔係** 叫你一次寫晒、亦唔係同 catalog 工單撈埋。
 
 複製下表，填「主關鍵字／目標 URL／狀態」。90 日只承諾前 6 篇。
 

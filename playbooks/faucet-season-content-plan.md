@@ -1,7 +1,8 @@
 # 今季 Content Plan：水龍頭為第一 Category（由頭做到尾）
 
-Category 已鎖定：**浴室龍頭（faucets / basin mixers / 龍頭）**。  
-下文係完整一次走位：工具點搵 bucket → 點組成 cluster → 90 日清單 → 一篇可發布的 GEO／SEO pillar（另檔），並註解點用詞。
+**總順序以 [content-workflow.md](content-workflow.md) 為準：步驟 2 只改貨頁；步驟 3–5 先至策劃同寫 Journal。** 呢份提供龍頭的詞表同示範，唔好把下面「fortify collection」讀成寫作步驟。
+
+Category 已鎖定：**浴室龍頭（faucets / basin mixers / 龍頭）**。
 
 正規 URL 以 2026-08 網站為準：
 
