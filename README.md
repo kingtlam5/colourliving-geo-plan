@@ -29,6 +29,7 @@
 | [docs/10-domains-canonical-schema.md](docs/10-domains-canonical-schema.md) | `.com` 品牌站 vs `.shop`、canonical 逐步做、現有 schema 審計 |
 | [docs/11-canonical-howto.md](docs/11-canonical-howto.md) | Contact 用 301 關閉、產品雙 URL 點核對／改 theme |
 | [playbooks/keyword-clusters.md](playbooks/keyword-clusters.md) | 香港市場關鍵字叢集 |
+| [playbooks/content-plan-layers.md](playbooks/content-plan-layers.md) | Category／bucket／cluster／pillar 分別、先後同點用 |
 | [playbooks/product-page-sop.md](playbooks/product-page-sop.md) | 產品頁寫作 SOP |
 | [playbooks/collection-page-sop.md](playbooks/collection-page-sop.md) | 分類 / 品牌頁 SOP |
 | [playbooks/geo-monthly-prompts.md](playbooks/geo-monthly-prompts.md) | 每月 AI 搜尋監測題庫 |
