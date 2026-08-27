@@ -32,6 +32,7 @@
 | [playbooks/content-plan-layers.md](playbooks/content-plan-layers.md) | Category／bucket／cluster／pillar 分別、先後同點用 |
 | [playbooks/faucet-season-content-plan.md](playbooks/faucet-season-content-plan.md) | 龍頭為 P0：工具搵 bucket／cluster + 90 日順序 |
 | [playbooks/pillar-gessi-hong-kong.md](playbooks/pillar-gessi-hong-kong.md) | Gessi Hong Kong 可發布 pillar + 用詞註解 |
+| [playbooks/pillar-blog-format.md](playbooks/pillar-blog-format.md) | Pillar 字數、詞頻、Q&A、內外連規格 |
 | [playbooks/product-page-sop.md](playbooks/product-page-sop.md) | 產品頁寫作 SOP |
 | [playbooks/collection-page-sop.md](playbooks/collection-page-sop.md) | 分類 / 品牌頁 SOP |
 | [playbooks/geo-monthly-prompts.md](playbooks/geo-monthly-prompts.md) | 每月 AI 搜尋監測題庫 |
