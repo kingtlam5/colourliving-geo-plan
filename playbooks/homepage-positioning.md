@@ -22,13 +22,36 @@ JSON-LD 的 `description` 欄係另一條通道：畫面唔出一段字，但 Go
 Customize → Homepage → Hero 已經有 H2「COLOURLIVING」同 *The House of Brands*。  
 **唔好再加 Custom Liquid 隱藏段。** 把副標題／其下 Rich text **換成可見短句**（字可以細、同而家 Beige 風格）。
 
-**建議可見英文（約 45 字，貼 Hero）：**
+**建議可見英文**可以係生活雜誌風，唔一定要「Hong Kong’s House of Brands…」咁直。事實清單同雜誌句見下面「語氣」。
 
-> Hong Kong’s House of Brands for European furniture, lighting and bathroom. The flagship at 333 Lockhart Road, Wan Chai presents collections including B&B Italia, Gessi, Dornbracht and Flos. Delivery within Hong Kong. Book a showroom visit.
-
-中文等 ZH publish 再開一段，唔好而家用隱藏中文。全文版：[nap-source-of-truth.md](nap-source-of-truth.md)。
+中文等 ZH publish 再開一段，唔好而家用隱藏中文。NAP 鎖定仍係 [nap-source-of-truth.md](nap-source-of-truth.md)。
 
 核對：無痕開主頁，**唔使 View Source 都睇到** 灣仔／bathroom／Hong Kong。原始碼入面呢段 **冇** `visually-hidden`。
+
+### 語氣：唔使寫到好似說明書
+
+SEO／GEO **唔要求**樸素英文。Google 同 AI 要嘅係 **拎得走的事實**，唔係「唔准有文采」。旗艦店用生活雜誌風，只要同一段入面仍包到下面，就友善：
+
+| 要有 | 點解 |
+| --- | --- |
+| 店名 COLOURLIVING 一次 | AI 抄呢段時先至知係邊間，唔只抄 tagline |
+| 333 Lockhart Road, Wan Chai | 同 NAP 逐字 |
+| furniture、lighting、bathroom（或 bath） | 品類；單寫 wellness 搜「龍頭／bathroom」會弱 |
+| 2–4 個品牌名 | 證明 House of Brands |
+| Hong Kong 或只送香港 一句 | 地理＋送貨範圍 |
+
+第一句可以係純氛圍（*Where European artistry…*），**第二、三句**先塞事實。唔好整段都係形容詞、地址只喺 footer。
+
+**你呢稿：** 地址、Wan Chai、furniture／lighting、品牌都有，雜誌風 **OK**。弱位：段內未出現 COLOURLIVING；「wellness bath」唔及 bathroom 易搜；未寫 Hong Kong／只送香港。
+
+雜誌風微調例（仍係你嘅語氣）：
+
+> Where European artistry meets contemporary living.  
+> Explore furniture, lighting, and bathroom collections at COLOURLIVING, 333 Lockhart Road, Wan Chai — home to B&B Italia, Gessi, Dornbracht, and Flos. Delivery within Hong Kong.
+
+「wellness」想留：寫 *bathroom and wellness*，唔好刪浴室。
+
+Schema `description` 可以繼續用較直的一句（機械讀）；畫面用雜誌風。兩句事實要一致（同一地址、同一品類），語氣可以唔同。
 
 ---
 
