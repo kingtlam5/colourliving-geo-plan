@@ -13,7 +13,7 @@
 | GEO | 幫好少；ChatGPT／Perplexity **好少抄 hidden** | **幾乎失效**。AI 抄首屏睇到的句子、About、footer，唔抄 `visually-hidden` 段落 |
 
 隱藏 H1 得，因為客人已經見到「COLOURLIVING / The House of Brands」，機械只係有一個正確標題。  
-定位段的目的係俾 **人想讀、AI 都抽到實體**（Wan Chai、品牌、rooms／light／bath）。藏起就做唔到 GEO。完整門牌同只送香港分別放 footer／schema 同 Customer Care，唔寫入 Hero。
+定位段要 **可見**。句子由你寫；機械只要求段內有下面「必定要有」兩樣。完整門牌同只送香港分別放 footer／schema 同 Customer Care。
 
 JSON-LD 的 `description` 欄係另一條通道：畫面唔出一段字，但 Google 讀 schema。**唔代替**可見定位段。兩樣一齊：畫面一段短句 + schema 一句 description。
 
@@ -26,29 +26,31 @@ Customize → Homepage → Hero 已經有 H2「COLOURLIVING」同 *The House of 
 
 中文等 ZH publish 再開一段，唔好而家用隱藏中文。NAP 鎖定仍係 [nap-source-of-truth.md](nap-source-of-truth.md)。
 
-核對：無痕開主頁，**唔使 View Source 都睇到** 呢段（Wan Chai、品牌、furniture／light／bath 其中幾個）。**冇** `visually-hidden`。完整門牌唔使再喺 Hero 重複；footer 同 schema 已有 333 Lockhart Road。
+### 定位段：必定要有／唔使有（鎖定）
 
-### 語氣：人想睇，先至輪到機械
+整段（tagline + 後面一句、兩句都計）**可見**。句子點寫由你定；我唔再改第二句。
 
-SEO／GEO **唔要求**說明書英文，亦唔要求把 NAP 印喺 Hero。Google／AI 已經由 **logo／H1、footer 地址、FurnitureStore schema** 讀到店名同洛克道。Hero 只要仲有 **可抽出的實體**（Wan Chai、幾個品牌、furniture／lighting／bath 用生活化句子帶出），就夠平衡。
+**必定要有（只得兩樣）：**
 
-| Hero 要令人想睇 | 機械仍然讀得到 |
+1. **地點一個詞：** `Wan Chai` **或** `Hong Kong`（兩個都寫都得，只寫一個都得）。唔使 333 Lockhart Road。  
+2. **舖頭賣咩，要睇得出唔淨係梳化：**  
+   - 最少一個品類詞：`furniture` / `lighting`（或 `light`）/ `bath`（或 `bathroom`），**或者**  
+   - 最少兩個**唔同場**的品牌（例如 B&B Italia = 傢俬，Flos = 燈，Gessi 或 Dornbracht = 浴室）。  
+   品類詞同品牌可以只揀一條路，唔使兩樣齊唸成清單。
+
+**唔使寫入定位段（其他位已經有）：**
+
+| 元素 | 已經喺邊 |
 | --- | --- |
-| 第一句可以係氛圍、雙關（*definitive address* 唔等於貼門牌） | 隱藏 H1 已有 Wan Chai, Hong Kong |
-| 灣仔用 *Wan Chai flagship*，唔使再唸一次全個 street | Footer + schema = 333 Lockhart Road |
-| 品牌當故仔帶出，唔好「featuring A, B, C and D」清單 | B&B / Flos / Gessi / Dornbracht 仍係專有名詞 |
-| 品類織入房間／光／浴室，唔好「furniture, lighting, and bath collections from」 | 句入面仍出現 furniture／light／bath 更好搜 |
-| **唔寫** delivery、預約教學、政策 | FAQ / Customer Care |
+| COLOURLIVING | Logo、H1、title |
+| 333 Lockhart Road 全個門牌 | Footer、schema、About |
+| 電話、營業時間 | Footer、schema |
+| Delivery / 只送香港 | Customer Care、FAQ |
+| 預約、exclusive、全品牌名單 | 唔屬於呢段 |
 
-**2026-08-28 採用稿（人同 AI 中間）：**
+**第一句**可以全係氛圍（*The definitive address for refined European living.* 可以留）。上面兩條「必定」放喺**後面那句**即可。
 
-> The definitive address for refined European living.  
-> Come through the Wan Chai flagship—B&B Italia for the rooms, Flos for the light, Gessi and Dornbracht for the bath.
-
-第二句有地方、四個品牌、傢俬／燈／浴室，但唔唸門牌、唔唸 collections from。  
-若想再貼近「走進舖」：把 *Come through* 改 *At the Wan Chai flagship*。
-
-Schema `description` 可以較直（含 Lockhart Road）；畫面用上面語氣。運送只放 Customer Care／FAQ。
+第二句用你自己的語氣寫。只要句入面撞到（1）+（2），SEO／GEO 就過關；其餘為人而寫。
 
 ---
 
