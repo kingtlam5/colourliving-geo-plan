@@ -39,6 +39,8 @@
 
 ## B. 首頁
 
+**2026-08-28 live audit：** [homepage-audit.md](../playbooks/homepage-audit.md)。而家係視覺旗艦 + 電商目錄，未有可引用定位段。
+
 首頁唔需要塞關鍵字，需要 **可被引用的定位段**（英文 + 中文各一）：
 
 > COLOURLIVING is Hong Kong’s House of Brands for European furniture, lighting and bathroom. The 2,000sqm flagship at 333 Lockhart Road, Wan Chai presents B&B Italia, Maxalto, Giorgetti, Gessi, Dornbracht, Flos and other authorised collections. Delivery is available within Hong Kong. Book a showroom visit with a specialist.
