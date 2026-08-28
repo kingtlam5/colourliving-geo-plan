@@ -1,10 +1,12 @@
 # 首頁 audit（colourliving.shop）
 
-日期：**2026-08-28**。公開 GET `https://colourliving.shop/`（HTTP 200）。只審計主頁，唔寫 theme code。
+日期：**2026-08-28**（同日第二次覆核 H1）。公開 GET `https://colourliving.shop/`（HTTP 200）。
 
-一句：主頁而家係 **視覺旗艦店 + 電商目錄**，未係 Google／AI 可抄的 **品牌實體頁**。
+**H1 已修好：** 主頁而家 **只有 1 個** `<h1 class="visually-hidden">COLOURLIVING — The House of Brands in Wan Chai, Hong Kong</h1>`。Logo 係 `<div class="header__logo">`。Header 結構正常（logo 圖、menu drawer 仍在）。
 
-對照目標定位段：[docs/04-pages-and-content.md](../docs/04-pages-and-content.md) B 節、[nap-source-of-truth.md](nap-source-of-truth.md)。
+一句：主頁仍然係 **視覺旗艦店 + 電商目錄**，未係 Google／AI 可抄的 **品牌實體頁**（隱藏 H1 唔等於有可見定位段）。
+
+對照：[docs/04-pages-and-content.md](../docs/04-pages-and-content.md) B 節、[nap-source-of-truth.md](nap-source-of-truth.md)、[homepage-hidden-h1.md](homepage-hidden-h1.md)。
 
 ---
 
@@ -14,7 +16,7 @@ Theme：Hyper preset **Pillar Beige v1.4.0**（`Shopify.theme`）。語言：`ht
 
 | 區 | 而家係咩 |
 | --- | --- |
-| Header | Logo 當唯一 `<h1>`（alt「COLOURLIVING」）。Mega menu：Bath／Furniture／Lighting／Kitchen／Wellness／Lifestyle／Tiles、Brands、Room inspiration、Customer Care、About。無 Journal、無獨立陳列室頁、無 For Designers。 |
+| Header | Logo 係 `<div class="header__logo">`（唔再係 H1）。Mega menu 同前。 |
 | Hero | Overlay 圖 + **H2**「COLOURLIVING」+ 一句 *The House of Brands*。冇地址、冇品牌名單、冇香港送貨。 |
 | 四格 banner | Home Essentials → `/pages/home-essentials`；Featured Brands → `/pages/featured-brands`；Get Inspired → living-room inspiration；**Special Offer「Shop Now」按鈕 disabled**（死 CTA）。 |
 | Haute Living Brands | 一句 *A curated selection of renowned brands…* + logo 連去品牌 collection：B&B Italia、Dornbracht、Effe、Fantini、Gessi、Giorgetti、Maxalto、Paola Lenti、Preciosa。 |
