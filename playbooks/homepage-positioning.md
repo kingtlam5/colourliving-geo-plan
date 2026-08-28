@@ -13,7 +13,7 @@
 | GEO | 幫好少；ChatGPT／Perplexity **好少抄 hidden** | **幾乎失效**。AI 抄首屏睇到的句子、About、footer，唔抄 `visually-hidden` 段落 |
 
 隱藏 H1 得，因為客人已經見到「COLOURLIVING / The House of Brands」，機械只係有一個正確標題。  
-定位段的目的係俾 **人同 AI 引用**（灣仔、傢俬＋燈＋浴室、只送香港、預約）。藏起就做唔到 GEO。
+定位段的目的係俾 **人同 AI 引用**（店名、灣仔地址、傢俬＋燈＋浴室）。藏起就做唔到 GEO。**只送香港**放 Customer Care／FAQ，唔寫入 Hero。
 
 JSON-LD 的 `description` 欄係另一條通道：畫面唔出一段字，但 Google 讀 schema。**唔代替**可見定位段。兩樣一齊：畫面一段短句 + schema 一句 description。
 
@@ -38,20 +38,20 @@ SEO／GEO **唔要求**樸素英文。Google 同 AI 要嘅係 **拎得走的事�
 | 333 Lockhart Road, Wan Chai | 同 NAP 逐字 |
 | furniture、lighting、bathroom（或 bath） | 品類；單寫 wellness 搜「龍頭／bathroom」會弱 |
 | 2–4 個品牌名 | 證明 House of Brands |
-| Hong Kong 或只送香港 一句 | 地理＋送貨範圍 |
+| Hong Kong | 寫入**地址**（Wan Chai, Hong Kong），唔寫 Delivery。送貨政策放 Customer Care／FAQ |
 
-第一句可以係純氛圍（*Where European artistry…*），**第二、三句**先塞事實。唔好整段都係形容詞、地址只喺 footer。
+第一句可以係純氛圍，**第二句**先有店名＋完整地址。唔好整段都係形容詞。
 
-**你呢稿：** 地址、Wan Chai、furniture／lighting、品牌都有，雜誌風 **OK**。弱位：段內未出現 COLOURLIVING；「wellness bath」唔及 bathroom 易搜；未寫 Hong Kong／只送香港。
+**Homepage 唔寫 delivery。** 「只送香港／不接受國際運送」已有 FAQ，應留 Customer Care。地理用地址裡的 *Hong Kong* 已經夠 GEO。
 
-雜誌風微調例（仍係你嘅語氣）：
+**2026-08-28 採用稿（雜誌風，無運送句）：**
 
-> Where European artistry meets contemporary living.  
-> Explore furniture, lighting, and bathroom collections at COLOURLIVING, 333 Lockhart Road, Wan Chai — home to B&B Italia, Gessi, Dornbracht, and Flos. Delivery within Hong Kong.
+> The definitive address for refined European living.  
+> COLOURLIVING, 333 Lockhart Road, Wan Chai, Hong Kong — furniture, lighting, and bath collections from B&B Italia, Flos, Gessi, and Dornbracht.
 
-「wellness」想留：寫 *bathroom and wellness*，唔好刪浴室。
+由你原稿收緊：段內加店名同 Hong Kong（地址，唔係送貨）；*Immerse / exceptional craftsmanship / curated masterworks* 疊咗太多形容，品牌同地址已經夠；Gessi／Dornbracht 帶浴室，仍留 *bath* 一個詞方便搜尋。
 
-Schema `description` 可以繼續用較直的一句（機械讀）；畫面用雜誌風。兩句事實要一致（同一地址、同一品類），語氣可以唔同。
+Schema `description` 可以繼續較直，畫面用上面語氣。運送細節唔使寫入 schema description。
 
 ---
 
