@@ -13,10 +13,11 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": ["Organization", "FurnitureStore"],
+  "@type": ["Organization", "FurnitureStore", "HomeGoodsStore"],
   "@id": "{{ shop.url }}#organization",
   "name": "COLOURLIVING",
   "legalName": "B.S.C. COLOURLIVING LIMITED",
+  "description": "COLOURLIVING is Hong Kong’s House of Brands for European furniture, lighting and bathroom, including faucets, baths and sanitary ware. Flagship at 333 Lockhart Road, Wan Chai. Delivery within Hong Kong.",
   "url": {{ shop.url | json }},
   "logo": {{ shop.brand.logo | image_url: width: 600 | prepend: "https:" | json }},
   "telephone": "+852-2295-6263",
@@ -62,5 +63,7 @@
 ```
 
 經緯度請用 Google Maps 店舖標點核對後再改。`sameAs` 只放 **確實存在** 的官方檔案。
+
+`FurnitureStore` 包傢俬陳列；`HomeGoodsStore` 包浴室／燈／家居。兩個一齊放。可見定位段唔好隱藏：[homepage-positioning.md](homepage-positioning.md)。
 
 驗證：https://search.google.com/test/rich-results 貼首頁 URL。

@@ -220,10 +220,11 @@ Themes → 現行 **Pillar** → **⋯ → Duplicate**。喺副本改。
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": ["Organization", "FurnitureStore"],
+  "@type": ["Organization", "FurnitureStore", "HomeGoodsStore"],
   "@id": {{ shop.url | append: '#organization' | json }},
   "name": "COLOURLIVING",
   "legalName": "B.S.C. COLOURLIVING LIMITED",
+  "description": "COLOURLIVING is Hong Kong’s House of Brands for European furniture, lighting and bathroom, including faucets, baths and sanitary ware. Flagship at 333 Lockhart Road, Wan Chai. Delivery within Hong Kong.",
   "url": {{ shop.url | json }},
   {%- if settings.logo -%}
   "logo": {
@@ -358,7 +359,7 @@ Hyper 有時把 JSON 拆咗喺 snippet。Edit code 搜 `sameAs`，改嗰個 loop
 
 - [ ] Theme settings 空社交欄已清空
 - [ ] 全站只有 **一個** Organization script
-- [ ] `@type` 含 `FurnitureStore`
+- [ ] `@type` 含 `FurnitureStore` 同 `HomeGoodsStore`
 - [ ] `url` 係 `https://colourliving.shop`（About 頁都係）
 - [ ] `sameAs` 冇 `""`
 - [ ] 產品頁 Product 仍然有效

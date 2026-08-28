@@ -29,7 +29,7 @@
 | [docs/10-domains-canonical-schema.md](docs/10-domains-canonical-schema.md) | `.com` 品牌站 vs `.shop`、canonical 逐步做、現有 schema 審計 |
 | [docs/11-canonical-howto.md](docs/11-canonical-howto.md) | Contact 用 301 關閉、產品雙 URL 點核對／改 theme |
 | [playbooks/keyword-clusters.md](playbooks/keyword-clusters.md) | 香港市場關鍵字叢集 |
-| [playbooks/homepage-audit.md](playbooks/homepage-audit.md) | 2026-08-28 主頁 live audit（視覺旗艦，未係可引用實體頁） |
+| [playbooks/homepage-positioning.md](playbooks/homepage-positioning.md) | 首頁定位段要可見；schema 加 HomeGoodsStore 包浴室 |
 | [playbooks/schema-audit.md](playbooks/schema-audit.md) | 2026-08-28 schema live audit：FurnitureStore 已上，Product 留 theme 預設 |
 | [playbooks/homepage-hidden-h1.md](playbooks/homepage-hidden-h1.md) | 主頁加 H1 但畫面唔顯示：先拆 logo H1，再用 visually-hidden |
 | [playbooks/bucket-vs-many-pillars.md](playbooks/bucket-vs-many-pillars.md) | 一個桶點樣拆成角度唔同的 pillar，避免改品牌名複製 |

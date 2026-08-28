@@ -47,7 +47,7 @@
 
 Rich Results Test 而家應貼 **主頁** 再測一次：有機會出 **Local business**（之前「No items detected」係因為舊 Organization 無地址）。地圖知識卡仍靠 GBP 一致。
 
-**唔好**再貼多一份 Organization。**唔好**把中文長文塞進 schema。
+`FurnitureStore` 包傢俬陳列；浴室／燈用同一份 JSON 加 `HomeGoodsStore` + `description`，唔好刪 FurnitureStore。見 [homepage-positioning.md](homepage-positioning.md)。
 
 ---
 
