@@ -13,7 +13,7 @@
 | GEO | 幫好少；ChatGPT／Perplexity **好少抄 hidden** | **幾乎失效**。AI 抄首屏睇到的句子、About、footer，唔抄 `visually-hidden` 段落 |
 
 隱藏 H1 得，因為客人已經見到「COLOURLIVING / The House of Brands」，機械只係有一個正確標題。  
-定位段要 **可見**。句子由你寫；機械只要求段內有下面「必定要有」兩樣。完整門牌同只送香港分別放 footer／schema 同 Customer Care。
+定位段要 **可見**。地點可以只出現喺 footer（可見）+ 隱藏 H1 + schema，唔強制寫入 Hero。
 
 JSON-LD 的 `description` 欄係另一條通道：畫面唔出一段字，但 Google 讀 schema。**唔代替**可見定位段。兩樣一齊：畫面一段短句 + schema 一句 description。
 
@@ -30,32 +30,32 @@ Customize → Homepage → Hero 已經有 H2「COLOURLIVING」同 *The House of 
 
 整段（tagline + 後面一句、兩句都計）**可見**。句子點寫由你定；我唔再改第二句。
 
-**必定要有（只得兩樣）：**
+**必定要有：**
 
-1. **地點一個詞：** `Wan Chai` **或** `Hong Kong`（兩個都寫都得，只寫一個都得）。唔使 333 Lockhart Road。  
-2. **舖頭賣咩，要睇得出唔淨係梳化：**  
-   - 最少一個品類詞：`furniture` / `lighting`（或 `light`）/ `bath`（或 `bathroom`），**或者**  
-   - 最少兩個**唔同場**的品牌（例如 B&B Italia = 傢俬，Flos = 燈，Gessi 或 Dornbracht = 浴室）。  
-   品類詞同品牌可以只揀一條路，唔使兩樣齊唸成清單。
+定位段本身只強制一樣：
 
-**唔使寫入定位段（其他位已經有）：**
+1. **舖頭賣咩，要睇得出唔淨係梳化：** 品類詞至少一個（`furniture` / `lighting`／`light` / `bath`／`bathroom`），**或者** 至少兩個唔同場品牌（B&B Italia、Flos、Gessi／Dornbracht）。
+
+**地點唔使再寫入定位段**，若全頁其他**可見**位置已有（footer「333 Lockhart Road, Wan Chai」算）。隱藏 H1 的 Wan Chai **唔算**定位段嘅可見地點——AI 少抄 hidden——但 footer + schema 已經夠。Hero 可以改用其他可見事實（例如 2,000 sqm）。
+
+**唔使寫入定位段：**
 
 | 元素 | 已經喺邊 |
 | --- | --- |
 | COLOURLIVING | Logo、H1、title |
-| 333 Lockhart Road 全個門牌 | Footer、schema、About |
+| Wan Chai / Hong Kong | 隱藏 H1；footer；schema |
+| 333 Lockhart Road | Footer、schema、About |
 | 電話、營業時間 | Footer、schema |
 | Delivery / 只送香港 | Customer Care、FAQ |
-| 預約、exclusive、全品牌名單 | 唔屬於呢段 |
 
-**第一句**可以全係氛圍（*The definitive address for refined European living.* 可以留）。上面兩條「必定」放喺**後面那句**即可。
+**第一句**可以全係氛圍。
 
-**2026-08-28 你採用的可見稿（兩條必定都有）：**
+**採用稿：**
 
 > The definitive address for refined European living.  
-> Immerse yourself in exceptional craftsmanship at our Wan Chai flagship—featuring curated masterworks from B&B Italia, Flos, Gessi, and Dornbracht.
+> Immerse yourself in exceptional craftsmanship at our 2000 sqm flagship—featuring curated masterworks from B&B Italia, Flos, Gessi, and Dornbracht.
 
-（1）Wan Chai。（2）B&B Italia、Flos、Gessi、Dornbracht 覆蓋傢俬／燈／浴室，唔使再唸 collections 清單。
+過關：品牌覆蓋三場；面積係 Hero 獨有可見事實；Wan Chai 留 H1 + footer。
 
 第二句用你自己的語氣寫。只要句入面撞到（1）+（2），SEO／GEO 就過關；其餘為人而寫。
 
