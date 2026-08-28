@@ -50,6 +50,13 @@ Customize → Homepage → Hero 已經有 H2「COLOURLIVING」同 *The House of 
 
 **第一句**可以全係氛圍（*The definitive address for refined European living.* 可以留）。上面兩條「必定」放喺**後面那句**即可。
 
+**2026-08-28 你採用的可見稿（兩條必定都有）：**
+
+> The definitive address for refined European living.  
+> Immerse yourself in exceptional craftsmanship at our Wan Chai flagship—featuring curated masterworks from B&B Italia, Flos, Gessi, and Dornbracht.
+
+（1）Wan Chai。（2）B&B Italia、Flos、Gessi、Dornbracht 覆蓋傢俬／燈／浴室，唔使再唸 collections 清單。
+
 第二句用你自己的語氣寫。只要句入面撞到（1）+（2），SEO／GEO 就過關；其餘為人而寫。
 
 ---
