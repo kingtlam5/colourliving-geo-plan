@@ -53,13 +53,9 @@ Demo／About／collection **唔使做呢步**（theme 已用 div）。
 
 你 upload 嗰份（約第 81–140 行）係 **原裝正確版**。只要把「主頁用 h1」改成「所有頁都用 div」，改 **兩舊、共約 10 行**，其他 3000 行（包括最底 `{% schema %}`）**一個字都唔好郁**。
 
-**第 81–85 行，整舊換成：**
+**唔好「Delete 完就 Save」。** Shopify 編輯器會即時檢查 HTML：你刪咗開頭嗰個 `if`／`<h1>`，結尾仲係 `</h1>`，就會報 error。要 **搵到以下兩段、先後 Replace、最後先 Save 一次。**
 
-```liquid
-      <div class="header__logo flex justify-center items-center z-1">
-```
-
-即係刪走呢 5 行：
+**Find 1**（檔入面 `Ctrl+F`，應喺 logo 上面）：
 
 ```liquid
     {%- if request.page_type == 'index' -%}
@@ -69,13 +65,13 @@ Demo／About／collection **唔使做呢步**（theme 已用 div）。
     {%- endif -%}
 ```
 
-**第 136–140 行，整舊換成：**
+**Replace 1：**
 
 ```liquid
-    </div>
+      <div class="header__logo flex justify-center items-center z-1">
 ```
 
-即係刪走：
+**即刻再 Find 2**（logo 個 `</a>` 後面；唔好 Save）：
 
 ```liquid
     {%- if request.page_type == 'index' -%}
@@ -84,6 +80,16 @@ Demo／About／collection **唔使做呢步**（theme 已用 div）。
       </div>
     {%- endif -%}
 ```
+
+**Replace 2：**
+
+```liquid
+    </div>
+```
+
+而家先 **Save**。中間個 `<a>`、圖片、`{% schema %}` 唔好郁。
+
+若 Find 1 搵唔到：你可能已經刪咗一半，先 **Revert file** 或把原裝 `header.liquid` 貼返去，再做上面兩次 Replace。
 
 改完 logo 區塊應變成：
 
