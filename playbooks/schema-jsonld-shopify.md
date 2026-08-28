@@ -66,4 +66,65 @@
 
 `FurnitureStore` 包傢俬陳列；`HomeGoodsStore` 包浴室／燈／家居。兩個一齊放。可見定位段唔好隱藏：[homepage-positioning.md](homepage-positioning.md)。
 
-驗證：https://search.google.com/test/rich-results 貼首頁 URL。
+---
+
+## 點解第一稿冇 `knowsAbout`／`hasOfferCatalog`
+
+唔係漏欄。第一稿只做 Google Local **會用來出結果的欄**：類型、NAP、時間、`sameAs`。下面兩欄 **Rich Results Test／地圖唔靠佢哋**。
+
+| | `knowsAbout` | `hasOfferCatalog` |
+| --- | --- | --- |
+| Schema 意思 | 呢間店「識／關於」咩題 | 呢間店「賣緊」一個目錄 |
+| Google 搜尋 | 唔係 Local business 必填，多數忽略 | 唔取代 PDP 的 Product；唔入 Merchant 購物結果 |
+| GEO | AI **有時**當提示（Gessi、浴室） | 理論上可連去 collection URL；多數模型仍讀可見頁同 `/llms.txt` |
+| 風險 | 品牌名單過長、過期、同畫面對唔上，似塞詞 | 寫 2000 隻 SKU 一定過期；同 Product schema 重複 |
+
+所以順序係：先令機械知 **邊間店、喺邊、咩類型**。品牌同貨盤的正經來源係 **collection／PDP** 同 **llms.txt**，唔係 Organization 一篇目錄。
+
+而家 NAP 已上，**可以加薄的一層**（仍然唔好當品牌百科）：
+
+**A. `knowsAbout`（建議加）** — 品類 + 定位段嗰幾個品牌，十個位以內：
+
+```json
+"knowsAbout": [
+  "European furniture",
+  "lighting",
+  "bathroom fittings",
+  "B&B Italia",
+  "Flos",
+  "Gessi",
+  "Dornbracht"
+]
+```
+
+放喺 `sameAs` 前面。有新主力品牌先加；Roca display、全 catalog 唔入。
+
+**B. `hasOfferCatalog`（可選、更薄）** — 三個部門連去現有 collection，**唔列產品**：
+
+```json
+"hasOfferCatalog": {
+  "@type": "OfferCatalog",
+  "name": "COLOURLIVING",
+  "itemListElement": [
+    {
+      "@type": "OfferCatalog",
+      "name": "Furniture",
+      "url": "https://colourliving.shop/collections/furniture"
+    },
+    {
+      "@type": "OfferCatalog",
+      "name": "Lighting",
+      "url": "https://colourliving.shop/collections/lighting"
+    },
+    {
+      "@type": "OfferCatalog",
+      "name": "Bathroom",
+      "url": "https://colourliving.shop/collections/bathroom-faucet"
+    }
+  ]
+}
+```
+
+**唔好：** 為每個 SKU 寫 Offer；同 Product JSON-LD 再抄一次價錢。貨喺 PDP schema + GMC。
+
+改完仍然只得 **一份** Organization。測主頁 Rich Results：Local business 唔應因為加咗呢兩欄而壞。

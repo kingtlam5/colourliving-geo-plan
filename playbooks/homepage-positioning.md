@@ -57,8 +57,6 @@ Customize → Homepage → Hero 已經有 H2「COLOURLIVING」同 *The House of 
 
 過關：品牌覆蓋三場；面積係 Hero 獨有可見事實；Wan Chai 留 H1 + footer。
 
-第二句用你自己的語氣寫。只要句入面撞到（1）+（2），SEO／GEO 就過關；其餘為人而寫。
-
 ---
 
 ## 2. Schema：FurnitureStore 要留，但唔夠代表全舖
@@ -78,7 +76,7 @@ Schema.org 無「浴室店」類型。較近、又包龍頭／浴缸／燈／生
 "description": "COLOURLIVING is Hong Kong’s House of Brands for European furniture, lighting and bathroom, including faucets, baths and sanitary ware. Flagship at 333 Lockhart Road, Wan Chai. Delivery within Hong Kong."
 ```
 
-可選：`"knowsAbout": ["furniture", "lighting", "bathroom fittings"]` — 三個詞即得，**唔好**把 Gessi／Roca 全名單塞入 schema。品牌靠 collection 頁。
+可選：`knowsAbout` 品類 + 幾個品牌；薄 `hasOfferCatalog` 連三個 collection。點解第一稿冇、而家點加：[schema-jsonld-shopify.md](schema-jsonld-shopify.md)。**唔好**把全品牌／全 SKU 塞進 Organization。
 
 **唔好用：** `DepartmentStore`、`HardwareStore`、`WholesaleStore`（類型錯）。**唔好**為浴室再開第二個 Organization。
 
