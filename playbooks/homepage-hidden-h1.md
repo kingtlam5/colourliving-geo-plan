@@ -1,7 +1,19 @@
 # 首頁加 H1 但畫面唔顯示
 
 你而家 **已經有一個 H1**：header logo（`<h1 class="header__logo">`）。Hero「COLOURLIVING」只係 **H2**。  
-所以唔可以只「再加一句隱藏 H1」——會變成兩個 H1。要先處理 logo 嗰個。
+所以 **喺主頁** 唔可以只「再加一句隱藏 H1」——會變成兩個 H1。要先處理 logo 嗰個。
+
+Hyper **已經**寫死：
+
+| 頁 | Logo 標籤 | 點解 |
+| --- | --- | --- |
+| 主頁 `/`（`template.name == 'index'`） | **`<h1 class="header__logo">`** | Theme 當首頁冇其他 H1，用 logo 頂 |
+| 其他（`/pages/demo`、About、collection、PDP） | **`<div class="header__logo">`** | 預留 H1 俾頁面自己的標題 |
+
+所以喺 **demo page 試 Custom Liquid H1，唔使改 header.liquid**——logo 本來就唔係 H1。  
+主頁若加同一句隱藏 H1，**仍然要**先拆 logo 嗰個 H1，否則兩個 H1。
+
+2026-08-28 覆核：homepage logo = `h1`；`/pages/demo` 同 `/pages/about-us` logo = `div`；`/collections/gessi` logo = `div`（collection 自己有 H1）。
 
 ---
 
@@ -32,10 +44,12 @@ Hyper：Homepage 那個 image-with-text overlay 區塊，睇下 Heading 有冇 *
 
 **先 Duplicate theme。** 只改副本。
 
-### 1. 主頁拆走 logo 的 H1
+### 1. 只喺 **主頁** 先要拆 logo 的 H1
+
+Demo／About／collection **唔使做呢步**（theme 已用 div）。
 
 Online Store → Themes → ⋯ → **Edit code** → `sections/header.liquid`  
-搜：`header__logo` 或 `<h1`。
+搜：`header__logo` 或 `<h1`。你會見到類似 `{% if template.name == 'index' %}` 包住 logo 的 `h1` vs `div`。
 
 而家類似：
 
