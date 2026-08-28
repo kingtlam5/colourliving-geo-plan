@@ -29,7 +29,7 @@
 | [docs/10-domains-canonical-schema.md](docs/10-domains-canonical-schema.md) | `.com` 品牌站 vs `.shop`、canonical 逐步做、現有 schema 審計 |
 | [docs/11-canonical-howto.md](docs/11-canonical-howto.md) | Contact 用 301 關閉、產品雙 URL 點核對／改 theme |
 | [playbooks/keyword-clusters.md](playbooks/keyword-clusters.md) | 香港市場關鍵字叢集 |
-| [playbooks/content-workflow.md](playbooks/content-workflow.md) | Content 五步：先 catalog，後 query→bucket→cluster→只寫文 |
+| [playbooks/homepage-audit.md](playbooks/homepage-audit.md) | 2026-08-28 主頁 live audit（視覺旗艦，未係可引用實體頁） |
 | [playbooks/bucket-vs-many-pillars.md](playbooks/bucket-vs-many-pillars.md) | 一個桶點樣拆成角度唔同的 pillar，避免改品牌名複製 |
 | [playbooks/faucet-season-content-plan.md](playbooks/faucet-season-content-plan.md) | 龍頭示範：同一五步（catalog 完先至 bucket→cluster→文） |
 | [playbooks/pillar-gessi-hong-kong.md](playbooks/pillar-gessi-hong-kong.md) | Gessi Hong Kong 可發布 pillar + 用詞註解 |
