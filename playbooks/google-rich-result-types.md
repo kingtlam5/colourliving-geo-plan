@@ -2,14 +2,14 @@
 
 畫面有 FAQ、麵包屑、地址 **唔等於** Google 有對應「結果類型」。Rich Results Test 只認 **JSON-LD 裡指定的 @type**，而且該類型仲要係 Google **而家仍支援** 的搜尋外觀。
 
-COLOURLIVING 而家實際（2026-08-26）：
+COLOURLIVING 而家實際（**2026-08-28 覆核**，詳見 [schema-audit.md](schema-audit.md)）：
 
 | 你見到（畫面） | JSON-LD 有冇 | Rich Results Test |
 | --- | --- | --- |
-| 首頁 FAQ 手風琴 | **冇** `FAQPage` | 唔出 FAQ。而且 Google **2026-05-07 起已取消 FAQ 豐富結果**，加咗都唔會喺搜尋展開 |
-| Collection／產品麵包屑（Home → Gessi） | **冇** `BreadcrumbList`，只有 HTML | 唔出 Breadcrumb |
-| Footer／About 地址 | 只有瘦 `Organization`，**冇** 地址欄 | 唔出 Local business |
-| 產品價錢 | 產品頁 **已有** `Product` + `Offer` | 測 **產品 URL** 先會出 Product；測首頁唔會 |
+| 首頁 FAQ 手風琴 | **冇** `FAQPage` | 唔出 FAQ。Google **2026-05-07 起已取消 FAQ 豐富結果** |
+| Collection／產品麵包屑 | **冇** `BreadcrumbList`，只有 HTML | 唔出 Breadcrumb |
+| Footer／About 地址 | **有** `Organization` + `FurnitureStore` + 洛克道 | 貼 **主頁** 有機會出 **Local business** |
+| 產品價錢 | 產品頁 **已有** `Product` + `Offer` | 測 **產品 URL** |
 
 首頁測出「No items detected」= 呢頁冇合格類型，唔係 Google 睇唔到整站。
 
@@ -19,10 +19,7 @@ COLOURLIVING 而家實際（2026-08-26）：
 
 Google 要的係 `LocalBusiness` 或其子類，**而且要有 `address`**。`FurnitureStore` 就係子類。
 
-而家只有 `Organization` + logo + 社交 → **唔合格**做 Local business 結果類型。
-
-做法：用已寫好嗰段取代 `header.liquid` 的 Organization script（`@type": ["Organization", "FurnitureStore"]` + 洛克道 + 電話 + 營業時間）。  
-Publish 後再測 `https://colourliving.shop/`，先有機會出現 **Local business**。
+**2026-08-28：** 已有 `Organization` + `FurnitureStore` + 洛克道。貼主頁再測 Local business。做法紀錄：[how-to-edit-schema.md](how-to-edit-schema.md)。
 
 驗證：https://search.google.com/test/rich-results  
 

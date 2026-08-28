@@ -40,8 +40,8 @@ Theme：Hyper preset **Pillar Beige v1.4.0**（`Shopify.theme`）。語言：`ht
 | Canonical | `https://colourliving.shop/` | 正確 |
 | hreflang | 無 | 中文未 publish 時可接受 |
 | robots | 無 noindex | 可索引 |
-| H1 | Header logo，**唔係**內容標題 | 弱。內容第一個標題係 H2「COLOURLIVING」。若要加 SEO H1 但畫面唔出：[homepage-hidden-h1.md](homepage-hidden-h1.md) |
-| JSON-LD | Organization + WebSite/SearchAction | Organization **無 address／telephone／hours／FurnitureStore**；`sameAs` 有多條 `""`；`url` 無 trailing slash（細） |
+| H1 | **1 個：** `visually-hidden`「COLOURLIVING — The House of Brands in Wan Chai, Hong Kong」 | 結構正確。畫面仍係 Hero H2「COLOURLIVING」 |
+| JSON-LD | `Organization` + `FurnitureStore`（有地址）+ WebSite/SearchAction | 見 [schema-audit.md](schema-audit.md)。`sameAs` 已無空字串 |
 | og:image | 一條用 **`http://`**（另有 secure_url https） | 應全部 https |
 | 分析 | GA4 `G-3L3SMEW6C7`；Microsoft Clarity | 已裝 |
 | 中文 | 主頁 0 個漢字；無 `/zh` 切換 | 香港搜尋接唔住 |
