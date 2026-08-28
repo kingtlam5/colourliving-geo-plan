@@ -7,7 +7,7 @@ Hyper **已經**寫死：
 
 | 頁 | Logo 標籤 | 點解 |
 | --- | --- | --- |
-| 主頁 `/`（`template.name == 'index'`） | **`<h1 class="header__logo">`** | Theme 當首頁冇其他 H1，用 logo 頂 |
+| 主頁 `/`（`request.page_type == 'index'`） | **`<h1 class="header__logo">`** | Theme 當首頁冇其他 H1，用 logo 頂 |
 | 其他（`/pages/demo`、About、collection、PDP） | **`<div class="header__logo">`** | 預留 H1 俾頁面自己的標題 |
 
 所以喺 **demo page 試 Custom Liquid H1，唔使改 header.liquid**——logo 本來就唔係 H1。  
@@ -48,38 +48,64 @@ Hyper：Homepage 那個 image-with-text overlay 區塊，睇下 Heading 有冇 *
 
 Demo／About／collection **唔使做呢步**（theme 已用 div）。
 
-Online Store → Themes → ⋯ → **Edit code** → `sections/header.liquid`  
-搜：`header__logo` 或 `<h1`。你會見到類似 `{% if template.name == 'index' %}` 包住 logo 的 `h1` vs `div`。
+**停：** Hyper 的 `header.liquid` **已經有** `request.page_type == 'index'` 包住 logo 的 `h1`／`div`。  
+唔好再喺外面加多一層 `{% if template.name == 'index' %}`——兩個 if 套埋，開關標籤會錯配，header 會炒。
 
-而家類似：
+你 upload 嗰份（約第 81–140 行）係 **原裝正確版**。只要把「主頁用 h1」改成「所有頁都用 div」，改 **兩舊、共約 10 行**，其他 3000 行（包括最底 `{% schema %}`）**一個字都唔好郁**。
 
-```liquid
-<h1 class="header__logo ...">
-  <a href="/">…logo…</a>
-</h1>
-```
-
-改成：**只有首頁用 div，其他頁可繼續用 h1**（內頁 logo 當 H1 都普通）。
+**第 81–85 行，整舊換成：**
 
 ```liquid
-{% if template.name == 'index' %}
-  <div class="header__logo flex justify-center items-center z-1">
-{% else %}
-  <h1 class="header__logo flex justify-center items-center z-1">
-{% endif %}
+      <div class="header__logo flex justify-center items-center z-1">
 ```
 
-對應的 `</h1>` 都要改成：
+即係刪走呢 5 行：
 
 ```liquid
-{% if template.name == 'index' %}
-  </div>
-{% else %}
-  </h1>
-{% endif %}
+    {%- if request.page_type == 'index' -%}
+      <h1 class="header__logo flex justify-center items-center z-1">
+    {%- else -%}
+      <div class="header__logo flex justify-center items-center z-1">
+    {%- endif -%}
 ```
 
-只改呢對標籤，**唔好**動 `{% schema %}` 設定 JSON。Save。
+**第 136–140 行，整舊換成：**
+
+```liquid
+    </div>
+```
+
+即係刪走：
+
+```liquid
+    {%- if request.page_type == 'index' -%}
+      </h1>
+    {%- else -%}
+      </div>
+    {%- endif -%}
+```
+
+改完 logo 區塊應變成：
+
+```liquid
+      <div class="header__logo flex justify-center items-center z-1">
+    {%- if section.settings.header_layout == 'logo-left' or section.settings.header_layout == 'logo-left-search-center' and section.settings.enable_collapse_on_scroll -%}
+      <button
+        class="menu-drawer-button toggle-navigation-button btn btn--inherit flex-col items-center justify-center hidden lg:flex shrink-0"
+        aria-label="{{ 'accessibility.menu_drawer' | t }}"
+      >
+        <span class="hamburger-line"></span>
+      </button>
+    {%- endif -%}
+    <a href="{{ routes.root_url }}" ...>
+      ...logo img...
+    </a>
+    </div>
+```
+
+Save 之後：header 外觀應同未改之前一樣。主頁原始碼 logo 變 `<div class="header__logo">`，Custom Liquid 嗰句先至係唯一 H1。
+
+若而家 header 已炒：把 upload 嗰份原裝 `header.liquid` 貼返去還原，再只做上面兩舊替換。**唔好**改 `{% schema %}`。
 
 ### 2. 主頁加一句隱藏 H1
 
