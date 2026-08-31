@@ -6,6 +6,8 @@ Shopify **唔係**喺 Admin 上載一個 `llms.txt`。要改 `https://colourlivi
 
 可貼上 theme 的 Liquid：**[agents-md-liquid.md](agents-md-liquid.md)**（檔名 `templates/agents.md.liquid`，三條 URL 一齊改）。
 
+同 Shopify 預設有咩唔同、刪咗會唔會影響 AI：[agents-md-vs-shopify-default.md](agents-md-vs-shopify-default.md)。
+
 以下係純文字品牌段，方便法務審。UCP 下半喺 Liquid 檔用 `agents` 物件生成，唔好只貼呢段而刪購物協議。
 
 上線後放到 `https://colourliving.shop/llms.txt`。中英並存，方便兩種 prompt。
