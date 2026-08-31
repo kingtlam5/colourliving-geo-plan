@@ -1,5 +1,17 @@
 # 產品卡品牌連去 `/collections/vendors?q=` 點改
 
+## 點解你撳產品卡會覺得「全部去 PDP」
+
+**圖同產品名**（`h3.product-card__title`）**已經正確**去 `/products/...`。你 check 嗰啲 link 冇錯。
+
+`/collections/vendors?q=` **唔喺圖、唔喺標題**。佢係標題 **上面** 一行細字品牌名（class `product-card__vendor`），Hyper 用 `reversed-link`：**平時無底線，好似淨係 label，hover 先有底線**。右鍵嗰個字「Flos」／「B&B Italia」（唔好右鍵張相）→ Copy link，先見到 `vendors?q=`。
+
+View Source / 開發者工具搜 `vendors?q=` 亦會中。2026-08-31 再抓：主頁 3 條；`/collections/gessi` 每張卡都有（15 條）；Flos PDP 品牌名 1 條。
+
+**優先極低。** 客人撳相買嘢唔受影響。只影響撳品牌細字會去弱 vendor 搜尋頁，而唔係 `/collections/flos`。唔急、可以當 backlog。
+
+---
+
 ## 喺邊（畫面）
 
 **唔係**「Haute Living Brands」logo 牆（嗰啲已經去 `/collections/gessi` 等）。
