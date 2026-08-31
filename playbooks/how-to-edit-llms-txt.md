@@ -23,7 +23,7 @@ Shopify **沒有** Admin 開關叫「編輯 llms.txt」。
 
 **COLOURLIVING：只新增 `agents.md.liquid`。** 唔好淨改 `llms.txt.liquid`，否則 ChatGPT 讀 `/agents.md` 仲係預設、Perplexity 讀 `/llms.txt` 先係品牌版，會分裂。
 
-加咗自訂範本會 **整份取代** 預設，唔會同系統合併。所以品牌介紹放上半，UCP 結帳說明要用 `agents` 物件自己寫返下半，唔好刪購物協議。
+加咗自訂範本會 **整份取代** 預設，唔會同系統合併。所以品牌介紹放上半，UCP 結帳說明要用 `agents` 物件自己寫返下半，唔好刪購物協議。同預設逐段對照：[agents-md-vs-shopify-default.md](agents-md-vs-shopify-default.md)。**唔使**抄返 Shopify 嘅 `## Platform` 開舖廣告。
 
 ---
 
