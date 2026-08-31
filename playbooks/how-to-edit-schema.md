@@ -284,6 +284,8 @@ Themes → 現行 **Pillar** → **⋯ → Duplicate**。喺副本改。
 
 **公眾假期：** Schema 冇「假期」欄；Sunday 已用 12:00–19:00。假期同周日一致就唔使加。
 
+**Rich Results 黃燈：** 香港無 `postalCode`，唔好填假編碼。`priceRange` 用 `$$$$`。`image` 除 logo 外最好再加一張陳列室實拍（見 [schema-jsonld-shopify.md](schema-jsonld-shopify.md)）。`knowsAbout` 後面必須有逗號先至 `sameAs`。
+
 ### Step 4 — 確認 Organization 的 url 用 `shop.url`
 
 若你舊 code 係 `"url": {{ request.origin | append: page.url | json }}` 或 `"url": "{{ canonical_url }}"`：
