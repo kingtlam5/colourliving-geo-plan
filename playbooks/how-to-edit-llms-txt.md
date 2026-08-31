@@ -89,6 +89,8 @@ Online Store 的「Add template」有時只准 `page`／`product`。若加唔到
 
 `Ctrl+F` 搜 `333 Lockhart` 同 `ucp.dev`：兩樣都要有。
 
+已上線之後只改標題／Store metadata：[how-to-edit-agents-md-title-and-store-metadata.md](how-to-edit-agents-md-title-and-store-metadata.md)。
+
 **Step 7 — 換 theme 要再加一次**
 
 檔案跟住 **嗰份 theme**。將來換 Dawn／複製新主題，預設會返 Shopify 原廠文。Publish 新 theme 前把 `agents.md.liquid` 一齊搬過去。

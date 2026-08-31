@@ -109,10 +109,10 @@ GEO：模型而家可以由 **llms.txt + schema + meta + footer** 抄到灣仔�
 
 ## 你喺 Admin 仲可以做（按影響）
 
-1. **換預約連結**，拎走 `Testing@bschk`。陳列室段可加一句可見洛克道（footer 已有，呢句係給唔碌到最底的人／模型）。  
+1. **換預約連結**，拎走 `Testing@bschk`。步驟：[how-to-change-booking-link.md](how-to-change-booking-link.md)。陳列室段可加一句可見洛克道。  
 2. **Hero 可見副標題**換成採用兩句（或你定稿、但要可見、要睇得出唔淨係梳化）。而家好句只喺 meta。  
-3. 產品卡品牌連 `/collections/flos`、`/collections/b-b-italia`，唔好 `vendors?q=`。Special Offer 死掣：給 URL 或收埋。  
-4. agents.md 可選：標題加 `Agent Instructions —`、加 Store metadata canonical 一句（對讀站幾乎零影響）。  
+3. 產品卡品牌細字連 `/collections/vendors?q=`：[how-to-fix-vendor-card-links.md](how-to-fix-vendor-card-links.md)。Special Offer 死掣：給 URL 或收埋。  
+4. agents.md 可選標題／Store metadata：[how-to-edit-agents-md-title-and-store-metadata.md](how-to-edit-agents-md-title-and-store-metadata.md)。  
 5. Title 可加 `Hong Kong`（例如 `COLOURLIVING | The House of Brands in Wan Chai`）。  
 6. `hasOfferCatalog` 三條 collection：**可選**。  
 7. About 加一個可見 H1。社交 icon 標籤 Tumblr／Vimeo。`og:image` 改 https。
