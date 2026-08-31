@@ -52,6 +52,20 @@
     "@type": "Country",
     "name": "Hong Kong"
   },
+  "knowsAbout": [
+    "European furniture",
+    "lighting",
+    "bathroom fittings",
+    "B&B Italia",
+    "Flos",
+    "Gessi",
+    "Dornbracht"
+  ],
+  "image": [
+    "https://colourliving.shop/cdn/shop/files/Colourliving_1F_Fukasawa_Setting_6c706d46-ff6e-484e-bd06-fad5a678b8c9.jpg",
+    {{ shop.brand.logo | image_url: width: 1200 | prepend: "https:" | json }}
+  ],
+  "priceRange": "$$$$",
   "sameAs": [
     "https://www.facebook.com/colourliving.hk",
     "https://www.instagram.com/colourliving.hk/",
@@ -65,6 +79,31 @@
 經緯度請用 Google Maps 店舖標點核對後再改。`sameAs` 只放 **確實存在** 的官方檔案。
 
 `FurnitureStore` 包傢俬陳列；`HomeGoodsStore` 包浴室／燈／家居。兩個一齊放。可見定位段唔好隱藏：[homepage-positioning.md](homepage-positioning.md)。
+
+---
+
+## Rich Results 話 miss postalCode / priceRange / image
+
+多數係 **Recommended**，唔係必填。黃燈唔等於 Local business 無效。
+
+| 欄 | 點做 |
+| --- | --- |
+| **postalCode** | 香港 **無郵政編碼**。唔好填 `00000`、`999077` 或 `""`。呢欄唔寫。測試會繼續提，可忽略。只當 GBP 有填碼先抄同一個。 |
+| **priceRange** | `"priceRange": "$$$$"`（旗艦歐洲傢俬／浴室）。 |
+| **image** | 要店的圖，單有 `logo` 唔夠。加陳列室實拍 HTTPS（約 192px+）。 |
+
+你而家 live JSON：`knowsAbout` 嘅 `]` 同 `"sameAs"` 之間 **漏咗逗號**，整段可能 parse 唔完整。補逗號，並加：
+
+```json
+  ],
+  "image": [
+    "https://colourliving.shop/cdn/shop/files/Colourliving_1F_Fukasawa_Setting_6c706d46-ff6e-484e-bd06-fad5a678b8c9.jpg"
+  ],
+  "priceRange": "$$$$",
+  "sameAs": [
+```
+
+圖可換成其他 `cdn/shop/files/` 店面相。Save 後再測主頁。
 
 ---
 

@@ -240,7 +240,6 @@ Themes → 現行 **Pillar** → **⋯ → Duplicate**。喺副本改。
     "streetAddress": "333 Lockhart Road",
     "addressLocality": "Wan Chai",
     "addressRegion": "Hong Kong",
-    "postalCode": "",
     "addressCountry": "HK"
   },
   "geo": {
