@@ -1,6 +1,12 @@
 # 點改首頁「Reserve Your Visit」同 Microsoft Bookings 連結
 
-Live 掣而家去：
+Live 掣而家去（2026-08-31 第二次 audit）：
+
+`https://outlook.office.com/book/COLOURLIVINGShowroomBooking@bschk.onmicrosoft.com/?ismsaljsauthenabled`
+
+已唔再係 `Testing@`。仍係 `bschk.onmicrosoft.com` 租戶域。
+
+舊測試 URL（已唔應出現喺首頁）：
 
 `https://outlook.office.com/book/Testing@bschk.onmicrosoft.com/?ismsaljsauthenabled`
 
