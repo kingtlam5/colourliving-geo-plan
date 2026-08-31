@@ -1,1 +1,64 @@
-# colourliving-geo-plan
+# COLOURLIVING SEO & GEO Plan
+
+香港頂級家居及生活品味旗艦店 **COLOURLIVING**（[colourliving.shop](https://colourliving.shop)）的系統化 SEO（搜尋引擎優化）與 GEO（Generative Engine Optimization，生成式引擎優化）計劃。
+
+本倉庫不是空泛的「SEO checklist」。它是一份 **經營系統**：先診斷、再定 entity 與域名、再做頁面與內容、再進 AI 搜尋、最後用指標閉環。
+
+## 點樣用
+
+1. 先讀 [`docs/00-start-here.md`](docs/00-start-here.md) — 角色、定義、點樣開始
+2. 再讀 [`docs/01-current-state.md`](docs/01-current-state.md) — 網站 launch 兩個月後的真實診斷
+3. 用 [`docs/02-operating-system.md`](docs/02-operating-system.md) 建立每週節奏
+4. 跟 [`docs/08-roadmap.md`](docs/08-roadmap.md) 執行 90 日計劃
+5. 日常操作跟 `playbooks/` 內的 SOP
+
+## 文件地圖
+
+| 檔案 | 用途 |
+| --- | --- |
+| [docs/00-start-here.md](docs/00-start-here.md) | 計劃總覽、定義、成功標準 |
+| [docs/01-current-state.md](docs/01-current-state.md) | 現況診斷（域名、頁面、中英、AI） |
+| [docs/02-operating-system.md](docs/02-operating-system.md) | 系統化工作方法：五層金字塔 + 每週節奏 |
+| [docs/03-foundation.md](docs/03-foundation.md) | 域名、實體、技術 SEO、Local SEO |
+| [docs/04-pages-and-content.md](docs/04-pages-and-content.md) | 網站架構、產品頁、分類頁、內容系統、中英雙語 |
+| [docs/05-geo.md](docs/05-geo.md) | ChatGPT / Perplexity / Google AI Overviews 被引用的方法 |
+| [docs/06-authority.md](docs/06-authority.md) | 品牌權威、媒體、經銷商頁、設計師網絡 |
+| [docs/07-measurement.md](docs/07-measurement.md) | GSC / GA4 / Merchant Center / GEO 監測 |
+| [docs/08-roadmap.md](docs/08-roadmap.md) | 30 / 60 / 90 日執行表 |
+| [docs/09-faq-implementation.md](docs/09-faq-implementation.md) | 域名 301、canonical、NAP、schema、sitemap、hreflang、Local SEO |
+| [docs/10-domains-canonical-schema.md](docs/10-domains-canonical-schema.md) | `.com` 品牌站 vs `.shop`、canonical 逐步做、現有 schema 審計 |
+| [docs/11-canonical-howto.md](docs/11-canonical-howto.md) | Contact 用 301 關閉、產品雙 URL 點核對／改 theme |
+| [playbooks/keyword-clusters.md](playbooks/keyword-clusters.md) | 香港市場關鍵字叢集 |
+| [playbooks/homepage-positioning.md](playbooks/homepage-positioning.md) | 首頁定位段要可見；schema 加 HomeGoodsStore 包浴室 |
+| [playbooks/schema-audit.md](playbooks/schema-audit.md) | 2026-08-28 schema live audit：FurnitureStore 已上，Product 留 theme 預設 |
+| [playbooks/homepage-hidden-h1.md](playbooks/homepage-hidden-h1.md) | 主頁加 H1 但畫面唔顯示：先拆 logo H1，再用 visually-hidden |
+| [playbooks/bucket-vs-many-pillars.md](playbooks/bucket-vs-many-pillars.md) | 一個桶點樣拆成角度唔同的 pillar，避免改品牌名複製 |
+| [playbooks/faucet-season-content-plan.md](playbooks/faucet-season-content-plan.md) | 龍頭示範：同一五步（catalog 完先至 bucket→cluster→文） |
+| [playbooks/pillar-gessi-hong-kong.md](playbooks/pillar-gessi-hong-kong.md) | Gessi Hong Kong 可發布 pillar + 用詞註解 |
+| [playbooks/pillar-blog-format.md](playbooks/pillar-blog-format.md) | Pillar 字數、詞頻、Q&A、內外連規格 |
+| [playbooks/product-page-sop.md](playbooks/product-page-sop.md) | 產品頁寫作 SOP |
+| [playbooks/collection-page-sop.md](playbooks/collection-page-sop.md) | 分類 / 品牌頁 SOP |
+| [playbooks/geo-monthly-prompts.md](playbooks/geo-monthly-prompts.md) | 每月 AI 搜尋監測題庫 |
+| [playbooks/llms-txt-draft.md](playbooks/llms-txt-draft.md) | 品牌版 `llms.txt` 草稿 |
+| [playbooks/how-to-edit-llms-txt.md](playbooks/how-to-edit-llms-txt.md) | Shopify 點改 `/llms.txt`（`agents.md.liquid`） |
+| [playbooks/explain-llms-schema-to-management.md](playbooks/explain-llms-schema-to-management.md) | 用白話向管理層解釋 schema vs llms.txt vs agents.md |
+| [playbooks/show-boss-schema-llms.md](playbooks/show-boss-schema-llms.md) | 唔使睇 code：用 Google 測試工具同 `/llms.txt` screenshot 證明改動 |
+| [playbooks/google-rich-result-types.md](playbooks/google-rich-result-types.md) | 點先出到 Local business／Product／Breadcrumb；FAQ 豐富結果已取消 |
+| [playbooks/agents-md-liquid.md](playbooks/agents-md-liquid.md) | 可貼上 theme 的 `agents.md.liquid` |
+| [playbooks/weekly-rhythm.md](playbooks/weekly-rhythm.md) | 每週 4 小時營運節奏 |
+| [playbooks/measure-seo-geo.md](playbooks/measure-seo-geo.md) | Day 0 基準線；地基→技術→On-page→Blog→GEO 點用 GSC／GA／GMC |
+| [playbooks/nap-source-of-truth.md](playbooks/nap-source-of-truth.md) | 全網統一 NAP 與簡介 |
+| [playbooks/com-vs-shop-citations.md](playbooks/com-vs-shop-citations.md) | Vendor 官網保持 `.com`；購物用 `.shop` |
+| [playbooks/colourliving-com-current-index.md](playbooks/colourliving-com-current-index.md) | `.com` 而家實際仲有冇頁喺 Google；GSC 點解空白 |
+| [playbooks/wayback-and-www.md](playbooks/wayback-and-www.md) | Wayback 連結同用法；apex vs `www` 要唔要一齊 301 |
+| [playbooks/com-redirect-when-only-homepage.md](playbooks/com-redirect-when-only-homepage.md) | 只得 homepage 索引時點 301；內頁規則喺 Content → Menus |
+| [playbooks/schema-jsonld-shopify.md](playbooks/schema-jsonld-shopify.md) | Shopify Organization JSON-LD 草稿 |
+| [playbooks/how-to-edit-schema.md](playbooks/how-to-edit-schema.md) | 改 schema 的 Shopify 步驟同可貼內容 |
+| [playbooks/how-to-hreflang.md](playbooks/how-to-hreflang.md) | 英文冇 `/en/`、中文 `zh` 的 hreflang 處理 |
+| [playbooks/how-to-find-canonical-issues.md](playbooks/how-to-find-canonical-issues.md) | 點搵 canonical 問題 + 而家最大問題清單 |
+| [playbooks/roca-display-noindex.md](playbooks/roca-display-noindex.md) | 鋪頭 iPad 用 Roca collection：published + noindex |
+| [playbooks/blog-content-sop.md](playbooks/blog-content-sop.md) | Journal／blog 由支柱到發布的流程 |
+
+## 一句總原則
+
+> COLOURLIVING 唔係一般 Shopify 網店。網站要同時贏三場：Google 藍字排名、灣仔陳列室本地搜尋、以及 AI 助手回答「香港邊度買 Gessi / B&B Italia」時被點名。
