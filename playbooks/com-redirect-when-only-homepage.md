@@ -61,6 +61,8 @@ Homepage **唔使**喺 URL Redirects 加 `/` → `/`。層 A 已經轉晒根網�
 5. `colourliving.com` 同 `www.colourliving.com` 都設 **Redirect to primary domain**
 6. https://httpstatus.io/ 核：`https://colourliving.com/` 應 **301**（唔再 302）去 `.shop`
 
+   若 httpstatus.io 顯示 **Error** 而瀏覽器已經跳去 `.shop`：多數係工具／SSL 檢查問題，唔係 Shopify 冇 301。改用無痕 + Network 睇第一跳，或見 [why-httpstatus-io-errors-on-com-301.md](why-httpstatus-io-errors-on-com-301.md)。
+
 **Step 2 — 只為對唔上路徑加規則**
 
 1. 打開嗰條舊 URL（或 `colourliving.com/舊路徑`）
