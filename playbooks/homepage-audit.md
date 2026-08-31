@@ -1,5 +1,7 @@
 # 首頁 audit（colourliving.shop）
 
+**2026-08-31 覆核**見 [live-setup-audit-2026-08-31.md](live-setup-audit-2026-08-31.md)：隱藏 H1 同 meta 已過；可見 Hero 仍未換採用定位段；預約仍係 Testing@。
+
 日期：**2026-08-28**（同日第二次覆核 H1）。公開 GET `https://colourliving.shop/`（HTTP 200）。
 
 **H1 已修好：** 主頁而家 **只有 1 個** `<h1 class="visually-hidden">COLOURLIVING — The House of Brands in Wan Chai, Hong Kong</h1>`。Logo 係 `<div class="header__logo">`。Header 結構正常（logo 圖、menu drawer 仍在）。

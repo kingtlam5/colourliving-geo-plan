@@ -1,6 +1,8 @@
 # agents.md／llms.txt：我哋草稿 vs Shopify 預設
 
-**而家 live**（2026-08-31 再抓）：`/agents.md`、`/llms.txt`、`/llms-full.txt` 仍係 **Shopify 原廠同一套購物說明**。三條 URL 內容幾乎一樣，只係 Store Metadata 一句話跟住「你而家讀緊邊條」微調。
+**2026-08-31 稍後：** 三條 URL 已上品牌稿（同字節）。對照 Shopify 預設仍然有用——你加 `agents.md.liquid` 就係用呢份換走預設。Live 細節：[live-setup-audit-2026-08-31.md](live-setup-audit-2026-08-31.md)。
+
+**對照時的 live（上稿前）：** `/agents.md`、`/llms.txt`、`/llms-full.txt` 係 **Shopify 原廠同一套購物說明**。三條 URL 內容幾乎一樣，只係 Store Metadata 一句話跟住「你而家讀緊邊條」微調。
 
 加 `templates/agents.md.liquid` 會 **整份取代** 預設，唔會合併。所以你見到「好多 heading 冇咗、UCP 唔喺最頂」係正常——我哋係用品牌百科 **換走** Shopify 開檔廣告，UCP 整節搬去下半，唔係平台 API 消失。
 

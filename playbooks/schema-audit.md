@@ -1,5 +1,7 @@
 # Schema audit（live，2026-08-28）
 
+**2026-08-31 覆核**見 [live-setup-audit-2026-08-31.md](live-setup-audit-2026-08-31.md)：JSON 已通；已加 `HomeGoodsStore`、`knowsAbout`、陳列室 `image`、`priceRange: $$$$`；無假 postalCode。
+
 公開抓取。唔寫 theme code。對照 NAP：[nap-source-of-truth.md](nap-source-of-truth.md)。點改：[how-to-edit-schema.md](how-to-edit-schema.md)。
 
 **對比 8 月 26 日：** 舊嘅瘦 `Organization`（無地址、`sameAs` 夾 `""`）**已經換成** `Organization` + `FurnitureStore`。呢個 P0 做完。

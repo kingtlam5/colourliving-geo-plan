@@ -91,7 +91,9 @@
 - UCP / MCP 商務協議
 - 產品 `.json` 可供 agent 讀
 
-壞消息：**`llms.txt` 同 `agents.md` 幾乎全係 Shopify 通用結帳說明**，沒有講：
+**2026-08-31：** 三條 URL 已換成品牌 + UCP 稿（NAP、灣仔、品牌、只送香港）。詳情 [live-setup-audit-2026-08-31.md](../playbooks/live-setup-audit-2026-08-31.md)。以下「壞消息」係 8 月 25 日診斷，留作對照。
+
+壞消息（當時）：**`llms.txt` 同 `agents.md` 幾乎全係 Shopify 通用結帳說明**，沒有講：
 
 - COLOURLIVING 係邊間公司
 - 灣仔旗艦店地址
