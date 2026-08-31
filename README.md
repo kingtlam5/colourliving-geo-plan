@@ -41,6 +41,11 @@
 | [playbooks/geo-monthly-prompts.md](playbooks/geo-monthly-prompts.md) | 每月 AI 搜尋監測題庫 |
 | [playbooks/llms-txt-draft.md](playbooks/llms-txt-draft.md) | 品牌版 `llms.txt` 草稿 |
 | [playbooks/how-to-edit-llms-txt.md](playbooks/how-to-edit-llms-txt.md) | Shopify 點改 `/llms.txt`（`agents.md.liquid`） |
+| [playbooks/agents-md-vs-shopify-default.md](playbooks/agents-md-vs-shopify-default.md) | 自訂稿 vs Shopify 預設：刪咗咩、對 AI 有冇影響 |
+| [playbooks/live-setup-audit-2026-08-31.md](playbooks/live-setup-audit-2026-08-31.md) | 2026-08-31 live：homepage、agents.md／llms、schema、301、Roca |
+| [playbooks/how-to-change-booking-link.md](playbooks/how-to-change-booking-link.md) | Reserve Your Visit：改 Shopify 掣，唔係改 Bookings URL |
+| [playbooks/how-to-fix-vendor-card-links.md](playbooks/how-to-fix-vendor-card-links.md) | 產品卡 FLOS／B&B 細字連去 `vendors?q=` 點改 |
+| [playbooks/how-to-edit-agents-md-title-and-store-metadata.md](playbooks/how-to-edit-agents-md-title-and-store-metadata.md) | 已上線 agents.md：標題同 Store metadata 兩句 |
 | [playbooks/explain-llms-schema-to-management.md](playbooks/explain-llms-schema-to-management.md) | 用白話向管理層解釋 schema vs llms.txt vs agents.md |
 | [playbooks/show-boss-schema-llms.md](playbooks/show-boss-schema-llms.md) | 唔使睇 code：用 Google 測試工具同 `/llms.txt` screenshot 證明改動 |
 | [playbooks/google-rich-result-types.md](playbooks/google-rich-result-types.md) | 點先出到 Local business／Product／Breadcrumb；FAQ 豐富結果已取消 |
