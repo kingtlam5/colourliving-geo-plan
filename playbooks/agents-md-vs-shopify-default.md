@@ -14,7 +14,7 @@
 
 ## 檔案結構對照（heading 順序）
 
-Shopify 預設（而家 live）大致係：
+Shopify 預設（上稿前）大致係：
 
 1. `# Agent Instructions — COLOURLIVING` + 「點同網店互動」一句
 2. `## For Personal Shopping Assistants…`（整節推 Shop skill / Shop Pay）

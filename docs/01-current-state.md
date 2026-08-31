@@ -103,7 +103,7 @@
 - 中英雙語
 - 官方聯絡
 
-AI 助手若只讀 `llms.txt`，會把你們當成「又一間 Shopify 店」，而唔係「香港頂級歐洲家居旗艦」。呢個係 GEO 最便宜、槓桿最高的修復點。
+AI 助手若當時只讀預設 `llms.txt`，會把你們當成「又一間 Shopify 店」。呢個修復點 **2026-08-31 已上線**（品牌 + UCP）。
 
 Sitemap：部分抓取工具對 `https://colourliving.shop/sitemap.xml` 曾回 500；2026-08-26 用 GET 覆核為 **200**，子 sitemap（products／pages）亦 200。以瀏覽器打開同 GSC → Sitemaps 為準，見 [09-faq-implementation.md](09-faq-implementation.md) 第 6 題。
 
