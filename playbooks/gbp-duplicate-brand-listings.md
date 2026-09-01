@@ -51,6 +51,26 @@ COLOURLIVING 係 **一間** House of Brands 旗艦（333 Lockhart Road、同一�
 
 ---
 
+## 有權限係咪 delete 快過 submit request？
+
+**唔好 delete，亦唔好「永久關閉」。有 access 反而應該申請 merge。**
+
+GBP 冇真正「一撳消失」；你以為 delete 嘅嘢多數係：
+
+| 你撳 | 實際 |
+| --- | --- |
+| Remove / 刪除檔案／退出擁有權 | **Maps pin 多數仲喺。** 只係你唔再管；之後變無人認領，或者 Google／客人再 implicate 出嚟 |
+| Permanently closed | 檔案變「已結業」，評論 **多數帶唔去** 正牌 COLOURLIVING。同一門牌會出現「COLOURLIVING 開緊 + B&B at COLOURLIVING 已結業」兩粒針 |
+| Merge duplicate（支援） | 當成同一間店。**評論通常併入 survivor。** 呢個先係政策要嘅做法 |
+
+所以 delete **唔方便過** merge：pin 清唔走、星級散咗、 entiy 更亂。你有權限嘅好處係交得到 **Business Profile ID**，支援先肯合。
+
+唯一可考慮關閉而唔 merge：另一個 **實體地址** 的舊分店（真係執咗）。洛克道品牌分身唔屬呢類。
+
+零評論、從未公開過、開錯未 verify 的草稿：先試喺 Manager 移除草稿；若已上 Maps，仍然報 duplicate／merge，唔好關。
+
+---
+
 ## 你喺 Admin 點做（有權限）
 
 1. **盤點。** 試算表：店名、Maps URL、評論數、verify 未、電話、網站。標 survivor。  
