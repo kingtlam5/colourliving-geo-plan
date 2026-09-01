@@ -37,6 +37,60 @@ COLOURLIVING 係 **一間** House of Brands 旗艦（333 Lockhart Road、同一�
 
 ---
 
+## 點一次過知道舊同事開咗幾多張
+
+Manager **唔等於全世界。** 你而家個 Google 帳戶只列出 **你有權限** 嘅檔。舊同事用第二個帳戶開、未加你做 Manager 的，要靠地圖同搜尋搵。兩條一齊做，先算盤完。
+
+開試算表，欄：店名｜Maps URL｜你有無權限｜評論數｜電話｜網站｜處理（merge／正牌／關閉分店）。
+
+### A. 你管到的（5 分鐘）
+
+1. 開 [business.google.com/locations](https://business.google.com/locations)（或 Business Profile Manager → Locations）。  
+2. 左上若有 **Group／企業**，每個 group 都打開睇；舊同事可能開過第二個 group。  
+3. 用同一個登入再試：**另一個**曾經管店的公司 Google 帳戶（marketing@、舊 agency）。權限喺帳戶，唔喺店。  
+4. 有「Download / Export locations」就匯出 CSV。  
+5. 凡店名含 `at COLOURLIVING`、`by COLOURLIVING`、`by Dentro`、單一品牌名 + 洛克道，都列入分身。
+
+### B. 地圖上所有針（連你管唔到的）
+
+用 **無痕**，地區香港。同一間店搜幾次，抄晒唔同店名：
+
+| 搜尋 | 為咩 |
+| --- | --- |
+| `333 Lockhart Road` 或 `洛克道 333` | 同址疊針；撳建築物睇「此地點的商家」 |
+| `+852 2295 6263` 或 `2295 6263` | 分身多數共用呢個電話，一搜出一排 |
+| `COLOURLIVING Wan Chai` / `COLOURLIVING 灣仔` | 正牌 + 帶 COLOURLIVING 的分身 |
+| `"at COLOURLIVING"`、`"by COLOURLIVING"`、`"by Dentro"` | 舊同事慣用句式 |
+| `Dentro Wan Chai`、`Dentro Lockhart` | 舊招牌、Maxalto by Dentro 呢類 |
+
+每個結果打開 → 睇地址係咪洛克道／電話係咪 2295 6263 → 係就入表（連 Permanently closed）。複製 Maps 連結（有 `!1s` / CID 嗰條）。
+
+### C. 按品牌名補漏
+
+舊同事通常 **一個代理品牌開一張**。對住而家／曾經賣過的名單逐個搜：
+
+`[品牌] COLOURLIVING`、`[品牌] Wan Chai`、`[品牌] Dentro`、`[品牌] Lockhart`
+
+至少：B&B Italia、Maxalto、Giorgetti、Paola Lenti、Gessi、Dornbracht、Fantini、Flos、Preciosa、Roca、Herman Miller、Cassina、Minotti、Kartell、以及你記得已離場的品牌。
+
+Google 搜尋（唔單 Maps）亦可：
+
+```
+"COLOURLIVING" ("B&B" OR Gessi OR Flos OR Maxalto OR "Herman Miller" OR Dentro) (Wan Chai OR 灣仔 OR Lockhart)
+```
+
+知識卡／「商家」結果若店名唔係淨 COLOURLIVING，當分身。
+
+### D. 點算「盤完」
+
+- A 的清單 **加** B/C 多出嚟、你 Manager 冇的 = 全數。  
+- 兩張檔 Maps URL 相同 = 同一張，唔好報兩次。  
+- 地址唔係洛克道 = 可能真分店或錯 pin，**唔好**同旗艦 merge，另列。
+
+之後先揀 survivor，再按下面步驟申請 merge。管唔到的一樣入表，用報 duplicate／支援證明所有權。
+
+---
+
 ## 其他檔點處理
 
 | 類型 | 做法 |
@@ -73,7 +127,7 @@ GBP 冇真正「一撳消失」；你以為 delete 嘅嘢多數係：
 
 ## 你喺 Admin 點做（有權限）
 
-1. **盤點。** 試算表：店名、Maps URL、評論數、verify 未、電話、網站。標 survivor。  
+1. **盤點（先做）。** 試算表：店名、Maps URL、評論數、verify 未、電話、網站。標 survivor。點搵晒分身見上一節。  
 2. **NAP 對齊。** 重複檔地址／電話改到同 survivor **完全一樣**（合併條件）。店名暫時唔使改到同名。  
 3. **申請 merge（唔係 Dashboard 一個「Merge」掣）。**  
    - [Resolve duplicate profiles](https://support.google.com/business/answer/12756178) → 支援 → 講 merge duplicate  
