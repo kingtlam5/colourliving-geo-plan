@@ -367,7 +367,8 @@ Google 會展示：**地圖包、Google 商家檔案、路線、電話、營業�
 ### 你要管的資產
 
 1. **Google Business Profile（最重要）**  
-   類別 Furniture store、地址 333 Lockhart Road、電話、時間、網站建議填 **colourliving.com**（301 去店；你自己控制，Stage B 唔使再改）。Shop 掣／廣告先用 `.shop`。
+   類別 Furniture store、地址 333 Lockhart Road、電話、時間、網站建議填 **colourliving.com**（301 去店；你自己控制，Stage B 唔使再改）。Shop 掣／廣告先用 `.shop`。  
+   **只有一張正牌檔。** 品牌分身 GBP 要 merge，見 [gbp-duplicate-brand-listings.md](../playbooks/gbp-duplicate-brand-listings.md)。
 2. **網站上的本地頁**  
    About／獨立 Showroom 頁，NAP 同 GBP 逐字一致，內嵌地圖、點預約、點去（灣仔站 A1）
 3. **Schema**  

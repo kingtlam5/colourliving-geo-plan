@@ -153,6 +153,8 @@ Luxury catalog 常見失敗：缺 GTIN、價格不符、缺貨仍標 InStock、�
 
 ### Google Business Profile
 
+**一間洛克道旗艦 = 一張 GBP。** 唔好為 B&B／Gessi／Maxalto 再開「Brand at COLOURLIVING」。舊同事開嘅品牌檔、`Maxalto by Dentro`：merge 入正牌。步驟：[gbp-duplicate-brand-listings.md](../playbooks/gbp-duplicate-brand-listings.md)。
+
 - 類別：`Furniture store` 主類別；可加 `Kitchen supply store` / `Bathroom remodeler` 需符合政策，唔好亂加
 - 網站：只填 `https://colourliving.shop`
 - 地址、電話、時間同網站完全一致

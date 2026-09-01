@@ -53,6 +53,7 @@
 | [playbooks/weekly-rhythm.md](playbooks/weekly-rhythm.md) | 每週 4 小時營運節奏 |
 | [playbooks/measure-seo-geo.md](playbooks/measure-seo-geo.md) | Day 0 基準線；地基→技術→On-page→Blog→GEO 點用 GSC／GA／GMC |
 | [playbooks/nap-source-of-truth.md](playbooks/nap-source-of-truth.md) | 全網統一 NAP 與簡介 |
+| [playbooks/gbp-duplicate-brand-listings.md](playbooks/gbp-duplicate-brand-listings.md) | 品牌分身 GBP（B&B at COLOURLIVING、Dentro）merge 入一張正牌 |
 | [playbooks/com-vs-shop-citations.md](playbooks/com-vs-shop-citations.md) | Vendor 官網保持 `.com`；購物用 `.shop` |
 | [playbooks/colourliving-com-current-index.md](playbooks/colourliving-com-current-index.md) | `.com` 而家實際仲有冇頁喺 Google；GSC 點解空白 |
 | [playbooks/wayback-and-www.md](playbooks/wayback-and-www.md) | Wayback 連結同用法；apex vs `www` 要唔要一齊 301 |
