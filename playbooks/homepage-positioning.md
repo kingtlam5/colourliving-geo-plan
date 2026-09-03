@@ -57,6 +57,17 @@ Customize → Homepage → Hero 已經有 H2「COLOURLIVING」同 *The House of 
 
 過關：品牌覆蓋三場；面積係 Hero 獨有可見事實；Wan Chai 留 H1 + footer。
 
+**2026-09-03 live（你加嘅段，可見、過 lock）：**
+
+Hero overlay 仍係 H2「COLOURLIVING」+ *The House of Brands*。跟住 image-with-text：
+
+- 小標：Curated Luxury Living Spaces  
+- H2：Where Iconic European Design Meets Hong Kong  
+- 段：Discover European luxury online or at COLOURLIVING’s 2,000sqm Wan Chai flagship for curated furniture, lighting, and bathware.
+
+品類三場 + 2,000 sqm + Wan Chai 都可見，**唔使再改呢句過 lock。** 建議空格寫 `2,000 sqm`。  
+同一區「**100% Authorised European Brands**」未過授權 lock——法務未確認前唔好寫 100% authorised／exclusive。改「Presented at COLOURLIVING」或「Curated European houses」。見 [nap-source-of-truth.md](nap-source-of-truth.md)。
+
 ---
 
 ## 2. Schema：FurnitureStore 要留，但唔夠代表全舖
